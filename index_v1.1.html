@@ -1,7 +1,7 @@
 <!DOCTYPE html> <!--Version 1.1-->
 <!--restructuration de l'html-->
 
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -15,34 +15,38 @@
     <header class="container">
         <div class="logo">
             <a href="">
-                <img src="../img/logo/Reservia@3x.png" alt="logo_reservia">
+                <img src="../img/logo/Reservia@3x.png" alt="logo reservia">
             </a>
         </div>
         <nav class="menu">
             <ul>
-                <li class="lodging">Hébergements</li>
+                <li class="lodging"><a href="">Hébergements</a></li> <!--mettre des liens-->
                 <li class="activity">Activités</li>
                 <li class="login">S'inscrire</li>
             </ul>
         </nav>
     </header> <!--retrecissement de la zone header-->
 
-        <h2>Trouvez votre hébergement pour des vancances de rêve</h2>
+        <h2>Trouvez votre hébergement pour des vancances de rêve</h2> <!--h1-TITRE DE LA PAGE/la taille est a réglé CSS-->
 
         <h3>En plein centre ville ou en pleine nature</h3>
             
         <div class="search">
             <i class="marker">
-                <img src="../img/logo/map-marker-alt-solid.svg" alt="marker" width="18px" height="18px"></i>
+                <img src="../img/logo/map-marker-alt-solid.svg" alt="marker" width="18px" height="18px"></i> <!--fill dans le .svg-->
                 <!--tentative d'insertion de l'atribut "fill" dans l'element .svg pour changer sa couleur : aucune action-->
-            <input type="text" placeholder="Marseille, France" name="rechercher">
-            <input type="button" value="Rechercher">
+                
+            <form action=""><!--input dans un formulaire-->
+                <input type="text" placeholder="Marseille, France" name="rechercher">
+                <input type="button" value="Rechercher">
+            </form>
+            
         </div>
 
         <div class="filtres">
             <p>Filtres</p>
             <img src="../img\logo\money-bill-wave-solid.svg" alt="money-bill-wave-solid" width="18px" height="18px">
-                <input type="button" value="Économique">
+                <input type="button" value="Économique"><!--utiliser des liens <a> plus que des "bouton"-->
             <img src="../img\logo\child-solid.svg" alt="child-solid" width="18px" height="18px">
                 <input type="button" value="Famillal">
             <img src="../img\logo\heart-solid.svg" alt="heart-solid" width="18px" height="18px">
@@ -57,10 +61,10 @@
         </div>
 
     <section>
-        <p><h1>Hébergements à Marseille</h1></p>
+        <p><h1>Hébergements à Marseille</h1></p> <!--le <p> n'a pas de sens ! --><!--utiliser h2/h3-->
             <div class="room">
                 <a href="">
-                    <img src="../img\hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_auberge_de_la_cannebiere" width="190px" height="150px">
+                    <img src="../img\hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_auberge_de_la_cannebiere" width="190px" height="150px"><!--les tailles/dimension d'images sont à faire sur le CSS!-->
                     <p>Auberge la Cannebière</p>
                     <p>Nuit à partir de <strong>25€</strong></p>
                 </a>
@@ -90,16 +94,16 @@
                 </a>
             </div>
                 <a href="">
-                    <p>Afficher plus</p>
+                    <p>Afficher plus</p><!--pas besoin de p-->
                 </a>
         </section>
 
         <aside>
-            <p><h1>Les plus populaires</h1></p>
+            <p><h1>Les plus populaires</h1></p><!--mm-->
             <a href="">
                 <img src="../img\hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo_hotel_le_soleil_du_matin" width="140px" height="140px">
-            <p>Hôtel Le soleil du matin</p>
-            <p>Nuit à partir de 128€</p>
+                <p>Hôtel Le soleil du matin</p><!--att a la semantic-->
+                <p>Nuit à partir de 128€</p>
             </a>
             <a href="">
                 <img src="../img\hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo_au_coeur_de_l_eau_chambre_d_hotes" width="140px" height="140px">
@@ -145,7 +149,7 @@
 
     <footer><!--display: flex;-->
         <div class="box_1"><p><h1>A propos</h1></p>
-            <a href=""><p>Fonctionement du site</p></a>
+            <a href=""><p>Fonctionement du site</p></a><!--<p> inutile-->
             <a href=""><p>Conditions générales de vente</p></a>
             <a href=""><p>Données et confidentialité</p></a>
         </div>
@@ -156,7 +160,6 @@
         <div class="box_3"><p><h1>Assistance</h1></p>
             <a href=""><p>Centre d'aide</p></a>
             <a href=""><p>Nous contarcter</p></a>
-        </div>
         </div>
     </footer>
 

@@ -1,6 +1,24 @@
 /*css secondaire simplifié*/
 
 
+@font-face{
+    font-family: 'Raleway-black';
+    src: url(fonts/Raleway-Black.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Raleway-bold';
+    src: url(fonts/Raleway-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url(fonts/Raleway-ExtraBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url(fonts/Raleway-Light.ttf) format('truetype');
+}
+
+
 body{
     margin: 50px;
     line-height: 0.7em;
@@ -103,20 +121,3 @@ ul{
 
 
 
-
-@font-face{
-    font-family: 'Raleway-black';
-    src: url(fonts/Raleway-Black.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Raleway-bold';
-    src: url(fonts/Raleway-Bold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Raleway-ExtraBold';
-    src: url(fonts/Raleway-ExtraBold.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'Raleway-Light';
-    src: url(fonts/Raleway-Light.ttf) format('truetype');
-}
