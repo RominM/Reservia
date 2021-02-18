@@ -17,10 +17,3 @@
     src: url(fonts/Raleway-Light.ttf) format('truetype');
 }
 
-.info{
-    display: flex;
-    border: solid;
-}
-#div .info .img{
-    border: solid;
-}
