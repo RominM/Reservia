@@ -33,3 +33,28 @@ footer{
 .child{
     border: solid green 2px;
 }
+
+
+.heading{
+    border: solid red 4px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+.logo img{
+    border: solid;
+    width: 100px;
+}
+.nav ul{
+    border: solid black 4px;
+    display: flex;
+    height: 50px;
+    width: 400px;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: space-around;
+}
+.transport{
+    border: solid green 2px;
+    list-style: none;
+}
