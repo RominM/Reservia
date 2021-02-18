@@ -30,3 +30,6 @@ footer{
 .container{
     border: solid red 4px;
 }
+.child{
+    border: solid green 2px;
+}
