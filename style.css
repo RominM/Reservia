@@ -29,9 +29,14 @@ footer{
 }
 .container{
     border: solid red 4px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .child{
     border: solid green 2px;
+}
+a{
+    text-decoration: none;
 }
 
 
@@ -39,11 +44,13 @@ footer{
     border: solid red 4px;
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 80px;
 }
 .logo img{
-    border: solid;
+    border: solid 4px;
     width: 100px;
+    padding: 15px;
+    margin-top: 0px;
 }
 .nav ul{
     border: solid black 4px;
@@ -53,8 +60,36 @@ footer{
     margin-top: 0px;
     align-items: center;
     justify-content: space-around;
+    padding: 15px;
 }
 .transport{
-    border: solid green 2px;
     list-style: none;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+}
+.search .marker{
+    width: 50px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+
+}
+.marker img{
+    width: 20px;
+    margin-left: 14px;
+    margin-top: 11px;
+}
+.search .place input{
+    border: solid #F2F2F2 2px;
+    height: 50px;
+}
+.search .butt input{ /*pourquoi certains elements n'ont pas la même reference en px ?*/
+    border-radius: 20px;
+    height: 50px;
+    width: 150px;
+    background-color: #0065FC;
 }
