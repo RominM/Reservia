@@ -85,3 +85,22 @@ a{
     width: 150px;
     background-color: #0065FC;
 }
+/*section <aside>*/
+.pop .pop_logo img{/*logo*/
+    height: 25px;
+}
+.pop .pop_h2{/*titre*/
+}
+.pop{/*parent*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 350px;
+}
+.pop .pic img{/*child photo*/
+    height: 100px;
+}
+.pop .element{/*=.pop .pic img + <p>*/
+    display: flex;
+    width: 350px;
+}
