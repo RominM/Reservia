@@ -19,6 +19,12 @@
 }
 
 
+div .search{
+    border: solid;
+}
+
+
+
 body{
     margin: 50px;
     line-height: 0.7em;
