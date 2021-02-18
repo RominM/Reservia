@@ -17,3 +17,16 @@
     src: url(fonts/Raleway-Light.ttf) format('truetype');
 }
 
+
+header{
+    border: solid black 6px;
+}
+section{
+    border: solid black 6px;
+}
+footer{
+    border: solid black 6px;
+}
+.container{
+    border: solid red 4px;
+}
