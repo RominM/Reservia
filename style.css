@@ -19,21 +19,16 @@
 
 
 header{
-    border: solid black 6px;
 }
 section{
-    border: solid black 6px;
 }
 footer{
-    border: solid black 6px;
 }
 .container{
-    border: solid red 4px;
     display: flex;
     flex-wrap: wrap;
 }
 .child{
-    border: solid green 2px;
 }
 a{
     text-decoration: none;
@@ -41,19 +36,16 @@ a{
 
 
 .heading{
-    border: solid red 4px;
     display: flex;
     justify-content: space-between;
     height: 80px;
 }
 .logo img{
-    border: solid 4px;
     width: 100px;
     padding: 15px;
     margin-top: 0px;
 }
 .nav ul{
-    border: solid black 4px;
     display: flex;
     height: 50px;
     width: 400px;
