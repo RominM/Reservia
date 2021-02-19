@@ -17,7 +17,10 @@
     src: url(fonts/Raleway-Light.ttf) format('truetype');
 }
 
-
+body{
+    margin-left: 30px;
+    margin-right: 30px;
+}
 header{
 }
 section{
@@ -48,56 +51,101 @@ footer{
     list-style: none;
 }
 
+h1{
+    font-family: ;
+}
+h2{
+    font-family: ;
+}
+
+/*section "Rechercher"*/
+
 .search{
     display: flex;
     align-items: center;
     max-width: 450px;
 }
-.search .marker{
+.search .marker{/*background du marker*/
     width: 50px;
-    height: 50px;
+    height: 55px;
     background-color: #F2F2F2;
-    border-radius: 20px;
-
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-.marker img{
-    width: 20px;
-    margin-left: 14px;
-    margin-top: 11px;
+.marker img{/*img maker*/
+    width: 17px;
+    margin-left: 18px;
+    margin-top: 17px;
 }
-.search .place input{
+.search .place input{/*champs de saisie*/
     border: solid #F2F2F2 2px;
-    height: 50px;
+    height: 49px;
 }
-.search .butt input{ /*pourquoi certains elements n'ont pas la même reference en px ?*/
-    border-radius: 20px;
-    height: 50px;
+.search .butt input{/*bouton "Rechercher"*/
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 54px;
     width: 150px;
     background-color: #0065FC;
 }
 
 /*section des filtres*/
-.filter{/*parent*/
-    position: relative;
-    border: solid;
+
+.filter{/*parent>txt + select*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 500px;
+    align-items: center;
+    max-width: 750px;
 }
-.filter .txt{/*texte "filtres"*/
-    border: solid;
+.filter .txt{/*txt*/
 }
-.filter .child img{/*logo*/
-    border: solid;
-    width: 50px;
+.select{/*child>.filter -- parent>logo+link*/
+    display: flex;
+    border: solid #F2F2F2;
+    border-radius: 30px;
+    align-items: center;
+    height: 50px;
+    padding-right: 15px;
+}
+.filter .select img{/*logo*/
+    border: solid #DEEBFF;
+    border-radius: 30px;
+    width: 30px;
     height: 30px;
-    padding-top: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: #DEEBFF;
 }
-.filter a{/*liens*/
-    position: absolute;
-    border: solid;
+.filter a{/*link*/
     text-decoration: none;
+}
+
+/*section Info*/
+
+.information{/*parent>info_logo + info_txt*/
+    border: solid;
+    display: flex;
+    align-items: center;
+}
+.information .info_logo{/*background logo*/
+    margin: 50px;/*a reduire une fois fini*/
+    background-color: #0065FC;
+    height: 17px;
+    width: 17px;
+    border-radius: 15px;
+    
+}
+.information .info_logo img{/*logo*/
+    width: 20px;
+    border: solid #F2F2F2 2px;
+    border-radius: 12px;
+}
+.information .info_txt{/*txt*/
+    border: solid;
+    margin-left: 10px;
 }
 
 /*section <aside>*/
