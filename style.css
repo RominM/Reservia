@@ -49,21 +49,25 @@ footer{
 }
 .transport{
     list-style: none;
+    font-family: 'Raleway-Light';
 }
 
 h1{
-    font-family: ;
+    font-family: 'Raleway-ExtraBold';
+    font-size: 1em;
 }
 h2{
-    font-family: ;
+    font-family: 'Raleway-Light';
+    font-size: 0.8em;
 }
 
 /*section "Rechercher"*/
 
-.search{
+.search{/*parent>marker + place + recherche*/
     display: flex;
     align-items: center;
     max-width: 450px;
+    margin-bottom: 15px;
 }
 .search .marker{/*background du marker*/
     width: 50px;
@@ -126,12 +130,11 @@ h2{
 /*section Info*/
 
 .information{/*parent>info_logo + info_txt*/
-    border: solid;
     display: flex;
     align-items: center;
 }
 .information .info_logo{/*background logo*/
-    margin: 50px;/*a reduire une fois fini*/
+    margin: 10px;
     background-color: #0065FC;
     height: 17px;
     width: 17px;
@@ -141,33 +144,59 @@ h2{
 .information .info_logo img{/*logo*/
     width: 20px;
     border: solid #F2F2F2 2px;
-    border-radius: 12px;
+    border-radius: 20px;
 }
 .information .info_txt{/*txt*/
-    border: solid;
     margin-left: 10px;
 }
 
 /*section <aside>*/
-.pop{/*parent*/
+
+.main{/*parent principal*/
+    border: solid;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.main .pop{/*parent > les plus pop*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 350px;
     border: solid;
     border-radius: 20px;
+    background-color: #F2F2F2;
+    height: ;
 }
-.pop .pop_logo img{/*logo*/
-    height: 25px;
-}
-.pop .pop_h2{/*titre*/
-}
-.pop .pic img{/*child photo*/
-    height: 100px;
-}
-.pop .element{/*=.pop .pic img + <p>*/
+.main .pop .pop_title{/*parent > pop_h2 + pop_logo*/
     display: flex;
-    width: 350px;
-    border: solid;
+}
+.main .pop .pop_title .pop h2{/*titre > Les plus pop*/
+
+}
+.main .pop .pop_title .pop_logo{/*logo "fleche"*/
+    width: 20px;
+}
+.main .pop .element{/*parent > pic + link*/
+    display: flex;
+    border: solid white 3px;
     border-radius: 20px;
 }
+.main .pop .element .pic img{/*photo > Les plus pop*/
+    width: 100px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px
+}
+.main .pop .element .link{
+    font-family: ;
+    font-size: 0.8em;
+    background-color: white;
+}
+
+
+.main .housing{/*parent>article*/
+    border: solid;
+    border-radius: 20px;
+    display: flex;
+    max-width: 350px;
+    flex-wrap: wrap;
+}
+
