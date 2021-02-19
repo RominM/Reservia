@@ -24,16 +24,6 @@ section{
 }
 footer{
 }
-.container{
-    display: flex;
-    flex-wrap: wrap;
-}
-.child{
-}
-a{
-    text-decoration: none;
-}
-
 
 .heading{
     display: flex;
@@ -85,17 +75,44 @@ a{
     width: 150px;
     background-color: #0065FC;
 }
+
+/*section des filtres*/
+.filter{/*parent*/
+    position: relative;
+    border: solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 500px;
+}
+.filter .txt{/*texte "filtres"*/
+    border: solid;
+}
+.filter .child img{/*logo*/
+    border: solid;
+    width: 50px;
+    height: 30px;
+    padding-top: 10px;
+}
+.filter a{/*liens*/
+    position: absolute;
+    border: solid;
+    text-decoration: none;
+}
+
 /*section <aside>*/
-.pop .pop_logo img{/*logo*/
-    height: 25px;
-}
-.pop .pop_h2{/*titre*/
-}
 .pop{/*parent*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 350px;
+    border: solid;
+    border-radius: 20px;
+}
+.pop .pop_logo img{/*logo*/
+    height: 25px;
+}
+.pop .pop_h2{/*titre*/
 }
 .pop .pic img{/*child photo*/
     height: 100px;
@@ -103,4 +120,6 @@ a{
 .pop .element{/*=.pop .pic img + <p>*/
     display: flex;
     width: 350px;
+    border: solid;
+    border-radius: 20px;
 }
