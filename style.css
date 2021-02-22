@@ -39,14 +39,24 @@ section{
     display: flex;
     height: 50px;
     width: 400px;
-    margin-top: 0px;
     align-items: center;
     justify-content: space-around;
-    padding: 15px;
-}
-.transport{
     list-style: none;
+}
+.hebergements a{
+    text-decoration: overline 3px;
+    color: #0065FC;
     font-family: 'Raleway-Light';
+}
+.activités a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway-Light';
+}
+.inscrire a{
+    text-decoration: none;
+    font-family: 'Raleway-black';
+    color: #0065FC;
 }
 
 h1{
@@ -103,7 +113,7 @@ h2{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 750px;
+    max-width: 1000px;
 }
 .filter .txt{/*txt*/
     font-family: 'Raleway-black';
@@ -114,7 +124,8 @@ h2{
     border-radius: 30px;
     align-items: center;
     height: 50px;
-    padding-right: 10px;
+    margin: 5px;
+    padding-right: 30px;
 }
 .filter .select img{/*logo*/
     border: solid #DEEBFF;
@@ -129,6 +140,7 @@ h2{
 .filter a{/*link*/
     text-decoration: none;
     font-family: 'Raleway-black';
+    color: black;
 }
 
 /*section Info*/
@@ -138,7 +150,6 @@ h2{
     align-items: center;
 }
 .information .info_logo{/*background logo*/
-    margin: 10px;
     background-color: #0065FC;
     height: 17px;
     width: 17px;
@@ -159,34 +170,35 @@ h2{
 /*section <aside>*/
 
 .main{/*parent principal*/
-    border: solid;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between=;
+    justify-content: space-between;
 }
 .main .pop{/*parent > les plus pop*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border: solid;
     border-radius: 20px;
     background-color: #F2F2F2;
     margin-left: 50px;
 }
-.main .pop .pop_title{/*parent > pop_h2 + pop_logo*/
+.main .pop_title{
     display: flex;
-    font-family: 'Raleway-black';
+    justify-content: space-around;
 }
-.main .pop .pop_title .pop h2{/*titre > Les plus pop*/
-
+.main .pop .pop_title .pop_h3{/*parent > pop_h2 + pop_logo*/
+    font-family: 'Raleway-black';
+    font-size: 1.1em;
 }
 .main .pop .pop_title .pop_logo{/*logo "fleche"*/
-    width: 20px;
+    width: 30px;
+    margin-top: 20px;
 }
 .main .pop .element{/*parent > pic + link*/
     display: flex;
-    border: solid black 3px;
+    border: solid white 10px;
     border-radius: 20px;
+    margin: 50px;
 }
 .main .pop .element .pic img{/*photo > Les plus pop*/
     background-size: cover;
@@ -198,7 +210,6 @@ h2{
 .main .pop .element .link{
     font-family: ;
     font-size: 0.8em;
-    border: solid;
     background-color: white;
     width: 200px;
 }
@@ -208,22 +219,20 @@ h2{
 
 .main .housing{/*parent>article*/
     position: relative;
-    border: solid;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 1000px;
     margin-right: 50px;
+    background-color: #F2F2F2;
 }
 .main .housing .house_title{
     font-family: 'Raleway-black';
-    border: solid;
     position: absolute;
     width: 100%;
 }
 .main .housing .child{
-    border: solid;
     border-radius: 20px;
     margin-top: 75px;
     width: 250px;
