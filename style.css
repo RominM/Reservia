@@ -3,7 +3,7 @@
 @font-face{
     font-family: 'Raleway-black';
     src: url(fonts/Raleway-Black.ttf) format('truetype');
-}
+}+
 @font-face {
     font-family: 'Raleway-bold';
     src: url(fonts/Raleway-Bold.ttf) format('truetype');
@@ -18,16 +18,13 @@
 }
 
 body{
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 header{
 }
 section{
 }
-footer{
-}
-
 .heading{
     display: flex;
     justify-content: space-between;
@@ -82,10 +79,15 @@ h2{
     margin-top: 17px;
 }
 .search .place input{/*champs de saisie*/
+    font-family: 'Raleway-Light';
+    font-size: 1.1em;
     border: solid #F2F2F2 2px;
     height: 49px;
 }
 .search .butt input{/*bouton "Rechercher"*/
+    font-family: 'Raleway-ExtraBold';
+    font-size: 1.1em;
+    color: white;
     border: none;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -104,6 +106,7 @@ h2{
     max-width: 750px;
 }
 .filter .txt{/*txt*/
+    font-family: 'Raleway-black';
 }
 .select{/*child>.filter -- parent>logo+link*/
     display: flex;
@@ -111,7 +114,7 @@ h2{
     border-radius: 30px;
     align-items: center;
     height: 50px;
-    padding-right: 15px;
+    padding-right: 10px;
 }
 .filter .select img{/*logo*/
     border: solid #DEEBFF;
@@ -119,12 +122,13 @@ h2{
     width: 30px;
     height: 30px;
     margin-top: 5px;
-    margin-right: 10px;
+    margin-right: 5px;
     padding: 10px;
     background-color: #DEEBFF;
 }
 .filter a{/*link*/
     text-decoration: none;
+    font-family: 'Raleway-black';
 }
 
 /*section Info*/
@@ -147,6 +151,8 @@ h2{
     border-radius: 20px;
 }
 .information .info_txt{/*txt*/
+    font-family: 'Raleway-black';
+    font-size: 0.8em;
     margin-left: 10px;
 }
 
@@ -156,6 +162,7 @@ h2{
     border: solid;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between=;
 }
 .main .pop{/*parent > les plus pop*/
     display: flex;
@@ -164,10 +171,11 @@ h2{
     border: solid;
     border-radius: 20px;
     background-color: #F2F2F2;
-    height: ;
+    margin-left: 50px;
 }
 .main .pop .pop_title{/*parent > pop_h2 + pop_logo*/
     display: flex;
+    font-family: 'Raleway-black';
 }
 .main .pop .pop_title .pop h2{/*titre > Les plus pop*/
 
@@ -177,26 +185,72 @@ h2{
 }
 .main .pop .element{/*parent > pic + link*/
     display: flex;
-    border: solid white 3px;
+    border: solid black 3px;
     border-radius: 20px;
 }
 .main .pop .element .pic img{/*photo > Les plus pop*/
-    width: 100px;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px
 }
 .main .pop .element .link{
     font-family: ;
     font-size: 0.8em;
+    border: solid;
     background-color: white;
+    width: 200px;
 }
 
 
+/*Hebergement à Marseille*/
+
 .main .housing{/*parent>article*/
+    position: relative;
     border: solid;
     border-radius: 20px;
     display: flex;
-    max-width: 350px;
     flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1000px;
+    margin-right: 50px;
+}
+.main .housing .house_title{
+    font-family: 'Raleway-black';
+    border: solid;
+    position: absolute;
+    width: 100%;
+}
+.main .housing .child{
+    border: solid;
+    border-radius: 20px;
+    margin-top: 75px;
+    width: 250px;
 }
 
+/*Activité à Marseille*/
+
+.activity{
+    border: solid;
+    display: flex;
+}
+.activity .activity_left{
+    border: solid;
+    display: flex;
+}
+.activity .activity_right{
+    border: solid;
+    display: flex;
+}
+.activity .child img{
+    border: solid;
+    border-radius: 20px;
+}
+
+/*Footer*/
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}

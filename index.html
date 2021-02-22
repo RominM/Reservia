@@ -136,9 +136,9 @@
             </div>    
         </aside>
         <article class="housing">
-            <div class="child">
-                <h3>Hébergements à Marseille</h3>
-            </div>
+                <div class="house_title">
+                    <h3>Hébergements à Marseille</h3>
+                </div>
             <div class="child">
                 <a href="">
                     <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_auberge_de_la_cannebiere" width="190px" height="150px"><!--les tailles/dimension d'images sont à faire sur le CSS!-->
@@ -152,6 +152,7 @@
                     <p>Hôtel du port</p>
                     <p>Nuit à partir de <strong>52€</strong></p>
                 </a>
+            </div>
             <div class="child">
                 <a href="">
                     <img src="img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photo_hotel_les_mouettes" width="190px" height="150px">
@@ -185,31 +186,31 @@
             </div>   
         </article>
     </section>
-    <section>
-        <div class="container">
-            <div class="child"></div>
-                <h3>Activités à Marseille</h3>
-            </div>
-            <div class="child">
-                <a href="">
-                    <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux_port" width="190px" height="150px">
-                    <p>Vieux Port</p>
-                </a>
-            </div>
-            <div class="child">
-                <a href="">
-                    <img src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort_de_pomegues" width="190px" height="150px">
-                    <p>Fort de Pomègues</p>
-                </a>
-            </div>
-            <div class="child">
-                <a href="">
-                    <img src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles_du_frioul" width="190px" height="150px">
-                    <p>Îles du Frioul</p>
-                </a>
+    <section class="activity">
+        <h3>Activités à Marseille</h3>
+        <div class="activity_left">
+            <div class="activity_title">
+                <div class="child">
+                    <a href="">
+                        <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux_port" width="190px" height="150px">
+                        <p>Vieux Port</p>
+                    </a>
+                </div>
+                <div class="child">
+                    <a href="">
+                        <img src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort_de_pomegues" width="190px" height="150px">
+                        <p>Fort de Pomègues</p>
+                    </a>
+                </div>
+                <div class="child">
+                    <a href="">
+                        <img src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="iles_du_frioul" width="190px" height="150px">
+                        <p>Îles du Frioul</p>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="container">
+        <div class="activity_right">
             <div class="child">
                 <a href="">
                     <img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="parc_national_des_calanques" width="190px" height="150px">
@@ -230,37 +231,47 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <h3>A propos</h3>
-            <div class="child">
-                <a href="">Fonctionement du site</a>
+    <footer class=footer>
+        <div class="block">
+            <div class="about">
+                <div class="child">
+                    <h3>A propos</h3>
+                </div>
+                <div class="child"><!--child sont ils vraiment utiles ???-->
+                    <a href="">Fonctionement du site</a>
+                </div>
+                <div class="child">
+                    <a href="">Conditions générales de vente</a>
+                </div>
+                <div class="child">
+                    <a href="">Données et confidentialité</a>
+                </div>
             </div>
-            <div class="child">
-                <a href="">Conditions générales de vente</a>
+        </div>
+        <div class="block">
+            <div class="house">
+                <div class="child">
+                    <h3>Nos hébergements</h3>
+                </div>
+                <div class="child">
+                    <a href="">Charte qualité</a>
+                </div>
+                <div class="child">
+                    <a href="">Soumettre votre hôtel</a>
+                </div>
             </div>
-            <div class="child">
-                <a href="">Données et confidentialité</a>
-            </div>
-        <div class="container">
-            <div class="child">
-                <h3>Nos hébergements</h3>
-            </div>
-            <div class="child">
-                <a href="">Charte qualité</a>
-            </div>
-            <div class="child">
-                <a href="">Soumettre votre hôtel</a>
-            </div>
-        <div class="container">
-            <div class="child">
-                <h3>Assistance</h3>
-            </div>
-            <div class="child">
-                <a href="">Centre d'aide</a>
-            </div>
-            <div class="child">
-                <a href="">Nous contarcter</a>
+        </div>
+        <div class="block">
+            <div class="help">
+                <div class="child">
+                    <h3>Assistance</h3>
+                </div>
+                <div class="child">
+                    <a href="">Centre d'aide</a>
+                </div>
+                <div class="child">
+                    <a href="">Nous contarcter</a>
+                </div>
             </div>
         </div>
     </footer>
