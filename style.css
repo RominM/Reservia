@@ -174,50 +174,55 @@ h2{
 /*section <aside>*/
 
 .main{/*parent principal*/
-    border: solid;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
-.main .pop{/*parent > les plus pop*/
+
+/*<aside> Les plus populaires*/
+
+.main .pop{/*parent*/
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     border-radius: 20px;
     background-color: #F2F2F2;
     margin-left: 30px;
+    max-height: 500px;
 }
-.main .pop_title{
+.main .pop_title{/*titre + logo*/
     display: flex;
     justify-content: space-around;
-}
-.main .pop .pop_title .pop_h3{/*parent > pop_h2 + pop_logo*/
-    font-family: 'Raleway-black';
+    font-family: 'Raleway-bold';
     font-size: 1.1em;
+    margin-top: 15px;
 }
 .main .pop .pop_title .pop_logo{/*logo "fleche"*/
     width: 30px;
     margin-top: 20px;
 }
-.main .pop .element{/*parent > pic + link*/
+.main .pop .element{/*pic + link*/
     display: flex;
-    border: solid white 10px;
-    border-radius: 20px;
     margin: 20px;
+    border: solid white 5px;
+    border-radius: 20px;
+
 }
-.main .pop .element .pic img{/*photo > Les plus pop*/
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px
-}
-.main .pop .element .link{
+.main .pop .element .link{/*link*/
     font-size: 0.8em;
     background-color: white;
     width: 175px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
 }
+.main .pop .element .pic img{/*photo*/
+    width: 150px;
+    height: 100px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 
+}
 
 /*Hebergement à Marseille*/
 
@@ -227,7 +232,6 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 875px;
     margin-right: 50px;
     background-color: #F2F2F2;
 }
@@ -261,7 +265,7 @@ h2{
 
 .star{
     display: flex;
-    width: 25px;
+    width: 15px;
 }
 
 
