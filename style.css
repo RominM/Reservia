@@ -59,6 +59,10 @@ section{
     color: #0065FC;
 }
 
+p{
+    font-family: 'Raleway-Light';
+    color: black;
+}
 h1{
     font-family: 'Raleway-ExtraBold';
     font-size: 1em;
@@ -170,17 +174,18 @@ h2{
 /*section <aside>*/
 
 .main{/*parent principal*/
+    border: solid;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
 .main .pop{/*parent > les plus pop*/
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     border-radius: 20px;
     background-color: #F2F2F2;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .main .pop_title{
     display: flex;
@@ -198,7 +203,7 @@ h2{
     display: flex;
     border: solid white 10px;
     border-radius: 20px;
-    margin: 50px;
+    margin: 20px;
 }
 .main .pop .element .pic img{/*photo > Les plus pop*/
     background-size: cover;
@@ -211,7 +216,7 @@ h2{
     font-family: ;
     font-size: 0.8em;
     background-color: white;
-    width: 200px;
+    width: 175px;
 }
 
 
@@ -223,38 +228,77 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 1000px;
+    max-width: 875px;
     margin-right: 50px;
     background-color: #F2F2F2;
 }
 .main .housing .house_title{
     font-family: 'Raleway-black';
     position: absolute;
-    width: 100%;
 }
 .main .housing .child{
+    border: solid white 5px;
     border-radius: 20px;
     margin-top: 75px;
     width: 250px;
+    height: 275px;
+    background-color: white;
 }
+.main .housing .child img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.main .housing .child a{
+    text-decoration: none;
+    background-color: white;
+}
+.main .housing .more{
+    border: solid;
+    position: absolute;
+    align-self: flex-end;
+    
+}
+
+.star{
+    display: flex;
+    width: 25px;
+}
+
 
 /*Activité à Marseille*/
 
 .activity{
+    position: relative;
     border: solid;
     display: flex;
+    justify-content: space-between;
+}
+.activity .activity_title{
+    position: absolute;
+    border: solid;
 }
 .activity .activity_left{
     border: solid;
     display: flex;
+    margin-top: 50px;
 }
 .activity .activity_right{
     border: solid;
     display: flex;
+    margin-top: 50px;
 }
-.activity .child img{
-    border: solid;
-    border-radius: 20px;
+.activity .bp img{
+    width: 200px;
+    height: 350px;
+}
+.activity .mp img{
+    width: 175px;
+    height: 150px;
+}
+.activity .sp img{
+    width: 150px;
+    height: 125px;
 }
 
 /*Footer*/
