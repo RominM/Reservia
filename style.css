@@ -300,22 +300,20 @@ h2{
 
 
 .main .housing .more{/*afficher plus*/
-    border: solid;
     position: absolute;
     align-self: flex-end;
-    
 }
 
 
 /*Activité à Marseille*/
 
 .activity{
-    border: solid;
     position: relative;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
     max-height: 500px;
+    margin-bottom: 15px;
 }
 .activity .activity_title{
     position: absolute;
@@ -325,7 +323,6 @@ h2{
     justify-content: space-around;
     align-items: flex-end;
     flex-wrap: wrap;
-    border: solid;
     margin-top: 50px;
     max-width: 550px;
 }
@@ -333,7 +330,6 @@ h2{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: solid;
     margin-top: 50px;
     max-width: 550px;
 }
@@ -361,4 +357,15 @@ h2{
 .footer{
     display: flex;
     justify-content: space-between;
+    background-color: #F2F2F2;
+}
+.footer .block .title{
+    font-family: 'Raleway-bold';
+    font-size: 0.8em;
+}
+.footer .block .child a{
+    font-family: 'Raleway-Light';
+    text-decoration: none;
+    font-size: 0.8em;
+    color: black;
 }
