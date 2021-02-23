@@ -253,21 +253,25 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-right: 50px;
+    margin: 5px;
+    padding: 15px;
     background-color: #F2F2F2;
     max-width: 700px;
+    max-height: 450px;
 }
 .main .housing .house_title{
     font-family: 'Raleway-black';
     position: absolute;
 }
-.main .housing .child{
+.main .housing .child a{
     border: solid white 5px;
     border-radius: 20px;
     margin-top: 75px;
     width: 250px;
     height: 275px;
     background-color: white;
+    max-width: 150px;
+    max-height: 125px;
 }
 .main .housing .child img{
     width: 100%;
