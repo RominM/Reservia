@@ -169,7 +169,11 @@ h2{
     font-size: 0.8em;
     margin-left: 10px;
 }
-
+/*section .main*/
+.main{
+    border: solid;
+    margin-bottom: 30px;
+}
 /*section <aside>*/
 
 .star{
@@ -249,6 +253,7 @@ h2{
 
 .main .housing{/*parent>article*/
     position: relative;
+    border: solid;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -259,30 +264,22 @@ h2{
     max-width: 700px;
     max-height: 450px;
 }
-.main .housing .house_title{
+.main .housing .house_title{/*titre*/
     font-family: 'Raleway-black';
     position: absolute;
 }
-.main .housing .child a{
-    border: solid white 5px;
-    border-radius: 20px;
-    margin-top: 75px;
-    width: 250px;
-    height: 275px;
-    background-color: white;
-    max-width: 150px;
-    max-height: 125px;
+.main .housing .squar a{/*block image + texte*/
+    border: solid;
+    width: 350px;
+    height: 350px;
 }
-.main .housing .child img{
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.main .housing .squar a .pic{/*image*/
 }
-.main .housing .child a{
-    text-decoration: none;
-    background-color: white;
+.main .housing .squar a .link{/*Zone de texte*/
 }
-.main .housing .more{
+
+
+.main .housing .more{/*afficher plus*/
     border: solid;
     position: absolute;
     align-self: flex-end;
