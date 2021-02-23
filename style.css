@@ -60,8 +60,7 @@ section{
 }
 
 p{
-    font-family: 'Raleway-Light';
-    color: black;
+    
 }
 h1{
     font-family: 'Raleway-ExtraBold';
@@ -173,6 +172,11 @@ h2{
 
 /*section <aside>*/
 
+.star{
+    display: flex;
+    width: 10px;
+}
+
 .main{/*parent principal*/
     display: flex;
     flex-wrap: wrap;
@@ -182,47 +186,64 @@ h2{
 
 /*<aside> Les plus populaires*/
 
-.main .pop{/*parent*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.main .pop {/*parent*/
     border-radius: 20px;
     background-color: #F2F2F2;
-    margin-left: 30px;
     max-height: 500px;
 }
-.main .pop_title{/*titre + logo*/
+.main .pop .pop_title{/*titre + logo*/
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 20px;
+}
+.main .pop .pop_title h3{
     font-family: 'Raleway-bold';
-    font-size: 1.1em;
-    margin-top: 15px;
+
 }
-.main .pop .pop_title .pop_logo{/*logo "fleche"*/
-    width: 30px;
-    margin-top: 20px;
+.main .pop .pop_title img{
+    width: 20px;
 }
-.main .pop .element{/*pic + link*/
+.main .pop .element a{/*block image + texte*/
     display: flex;
+    max-width: 350px;
+    max-height: 200px;
+    padding: 0px;
     margin: 20px;
     border: solid white 5px;
     border-radius: 20px;
-
+    text-decoration: none;
 }
-.main .pop .element .link{/*link*/
-    font-size: 0.8em;
-    background-color: white;
-    width: 175px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-}
-.main .pop .element .pic img{/*photo*/
-    width: 150px;
-    height: 100px;
+.main .pop .element a img{/*image*/
+    max-width: 100px;
+    max-height: 100px;
+    height: 100%;
+    width: 100%;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-
 }
+.main .pop .element a .link{/*Zone de texte*/
+    max-width: 150px;
+    max-height: 100px;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.main .pop .element a .link h6{/*Nom de l'hotel*/
+    font-family: 'Raleway-black';
+    font-size: 0.9em;
+    color: black;
+    margin: 0;
+}
+.main .pop .element a .link p{/*Nuit à partir de*/
+    font-size: 0.75em;
+    font-family: 'Raleway-Light';
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+
 
 /*Hebergement à Marseille*/
 
@@ -234,6 +255,7 @@ h2{
     justify-content: space-around;
     margin-right: 50px;
     background-color: #F2F2F2;
+    max-width: 700px;
 }
 .main .housing .house_title{
     font-family: 'Raleway-black';
@@ -261,11 +283,6 @@ h2{
     position: absolute;
     align-self: flex-end;
     
-}
-
-.star{
-    display: flex;
-    width: 15px;
 }
 
 
