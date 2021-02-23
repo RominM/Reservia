@@ -17,14 +17,15 @@
     src: url(fonts/Raleway-Light.ttf) format('truetype');
 }
 
+/*BODY*/
+
 body{
     margin-left: 50px;
     margin-right: 50px;
 }
-header{
-}
-section{
-}
+
+/*section Heading*/
+
 .heading{
     display: flex;
     justify-content: space-between;
@@ -59,9 +60,6 @@ section{
     color: #0065FC;
 }
 
-p{
-    
-}
 h1{
     font-family: 'Raleway-ExtraBold';
     font-size: 1em;
@@ -170,22 +168,17 @@ h2{
     margin-left: 10px;
 }
 /*section .main*/
-.main{
-    border: solid;
-    margin-bottom: 30px;
-}
-/*section <aside>*/
-
-.star{
-    display: flex;
-    width: 10px;
-}
-
 .main{/*parent principal*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-bottom: 30px;
+    height: 500px;
+}
+.star{
+    display: flex;
+    width: 10px;
 }
 
 /*<aside> Les plus populaires*/
@@ -193,7 +186,7 @@ h2{
 .main .pop {/*parent*/
     border-radius: 20px;
     background-color: #F2F2F2;
-    max-height: 500px;
+    height: 100%;
 }
 .main .pop .pop_title{/*titre + logo*/
     display: flex;
@@ -212,10 +205,12 @@ h2{
     max-width: 350px;
     max-height: 200px;
     padding: 0px;
-    margin: 20px;
+    margin: 30px;
     border: solid white 5px;
     border-radius: 20px;
     text-decoration: none;
+    box-shadow: black 1px 1px 10px 1px;
+
 }
 .main .pop .element a img{/*image*/
     max-width: 100px;
@@ -232,6 +227,7 @@ h2{
     width: 100%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    background-color: white;
 }
 .main .pop .element a .link h6{/*Nom de l'hotel*/
     font-family: 'Raleway-black';
@@ -252,31 +248,55 @@ h2{
 /*Hebergement à Marseille*/
 
 .main .housing{/*parent>article*/
-    position: relative;
-    border: solid;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 5px;
-    padding: 15px;
+    justify-content: space-between;
+    max-height: 100%;
+    max-width: 750px;
     background-color: #F2F2F2;
-    max-width: 700px;
-    max-height: 450px;
 }
-.main .housing .house_title{/*titre*/
+.main .housing .house_title h3{/*titre*/
     font-family: 'Raleway-black';
     position: absolute;
+    margin-bottom: 50px;
 }
-.main .housing .squar a{/*block image + texte*/
-    border: solid;
-    width: 350px;
-    height: 350px;
+
+.main .housing .squar{/*block image + texte*/
+    border: solid white 4px;
+    border-radius: 20px;
+    background-color: white;
+    width: 180px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-right: 30px;
+    margin-left: 30px;
+    box-shadow: black 1px 1px 10px 1px;
 }
-.main .housing .squar a .pic{/*image*/
+.main .housing .squar a .pic img{/*image*/
+    position: relative;
+    max-width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 .main .housing .squar a .link{/*Zone de texte*/
+    position: absolute;
+    width: 180px;
+    height: 75px;
 }
+.main .housing .squar a .link h6{
+    font-family: 'Raleway-black';
+    margin-top: -25px;
+    background-color: white;
+}
+.main .housing .squar a .link p{
+    font-family: 'Raleway-Light';
+    margin-top: -25px;
+    background-color: white;
+}
+
+
 
 
 .main .housing .more{/*afficher plus*/
@@ -290,36 +310,50 @@ h2{
 /*Activité à Marseille*/
 
 .activity{
-    position: relative;
     border: solid;
+    position: relative;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
+    max-height: 500px;
 }
 .activity .activity_title{
     position: absolute;
-    border: solid;
 }
 .activity .activity_left{
-    border: solid;
     display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    border: solid;
     margin-top: 50px;
+    max-width: 550px;
 }
 .activity .activity_right{
-    border: solid;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: solid;
     margin-top: 50px;
+    max-width: 550px;
 }
 .activity .bp img{
     width: 200px;
     height: 350px;
+    border-radius: 20px;
+    margin-right: 20px;
 }
 .activity .mp img{
-    width: 175px;
+    width: 200px;
     height: 150px;
+    border-radius: 20px;
+    margin-right: 20px;
 }
 .activity .sp img{
     width: 150px;
     height: 125px;
+    border-radius: 20px;
+    margin-right: 20px;
 }
 
 /*Footer*/
