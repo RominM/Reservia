@@ -64,11 +64,11 @@ body{
 
 h1{
     font-family: 'Raleway-ExtraBold';
-    font-size: 1em;
+    font-size: 1.3em;
 }
 h2{
     font-family: 'Raleway-Light';
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 /*section "Rechercher"*/
@@ -97,7 +97,9 @@ h2{
     font-size: 1.2em;
     border: solid #F2F2F2 2px;
     height: 49px;
+    padding-left: 15px;
 }
+
 .search .butt input{/*bouton "Rechercher"*/
     font-family: 'Raleway-Bold';
     font-size: 1.1em;
@@ -108,8 +110,12 @@ h2{
     height: 54px;
     width: 150px;
     background-color: #0065FC;
+    cursor: pointer;
+    outline: none;
 }
-
+.search .butt .place input:active{
+    transform: scale(0.8);
+}
 /*section des filtres*/
 
 .filter{/*parent>txt + select*/
@@ -224,6 +230,7 @@ h2{
     margin-top: 10px;
     margin-bottom: 30px;
     background-color: white;
+    transition: 0.3s;
 }
 .main .pop .element a .pic img{/*image*/
     width: 75%;
@@ -252,7 +259,6 @@ h2{
 }
 .main .pop .element a:hover{
     box-shadow: #a9a9a9 0px 2px 8px 2px;
-    transition: 0.3s;
 }
 
 
@@ -288,6 +294,7 @@ h2{
     height: 200px;
     margin-top: 30px;
     margin-left: 30px;
+    transition: 0.3s;
 }
 .main .housing .squar a .pic img{/*image*/
     position: relative;
@@ -324,7 +331,6 @@ h2{
 }
 .main .housing .squar:hover{
     box-shadow: #a9a9a9 0px 2px 8px 2px;
-    transition: 0.3s;
 }
 
 
