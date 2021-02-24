@@ -309,11 +309,10 @@ h2{
 /*Activité à Marseille*/
 
 .activity{
-    border: solid;
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 15px;
     padding-top: 15px;
     max-height: 100%;
@@ -324,35 +323,69 @@ h2{
 .activity .activity_left{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
     flex-wrap: wrap;
     margin-top: 50px;
-    max-width: 550px;
 }
 .activity .activity_right{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 50px;
-    max-width: 550px;
+}
+.activity .activity_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.activity .bp{
+    width: 300px;
+    height: 450px;
+    box-shadow: black 1px 1px 10px 1px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 .activity .bp img{
-    width: 200px;
-    height: 350px;
-    border-radius: 20px;
+    width: 100%;
+    height: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     margin-right: 20px;
+}
+.activity .mp{
+    width: 300px;
+    height: 300px;
+    box-shadow: black 1px 1px 10px 1px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 .activity .mp img{
-    width: 200px;
-    height: 150px;
-    border-radius: 20px;
+    width: 100%;
+    height: 85%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     margin-right: 20px;
 }
-.activity .sp img{
-    width: 150px;
-    height: 125px;
+.activity .sp{
+    width: 300px;
+    height: 175px;
+    box-shadow: black 1px 1px 10px 1px;
     border-radius: 20px;
+    margin-bottom: 20px;
+}
+.activity .sp img{
+    width: 100%;
+    height: 75%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     margin-right: 20px;
+}
+.activity a{/*text*/
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Raleway-bold';
+    color: black
+    ;
 }
 
 /*Footer*/
