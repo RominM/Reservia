@@ -189,7 +189,6 @@ h2{
     background-color: #F2F2F2;
     max-height: 750px;
     margin-bottom: 30px;
-    border: solid;
 }
 .main .pop .pop_title{/*titre + logo*/
     display: flex;
@@ -382,8 +381,7 @@ h2{
     text-decoration: none;
     text-align: center;
     font-family: 'Raleway-bold';
-    color: black
-    ;
+    color: black;
 }
 
 /*Footer*/
@@ -392,6 +390,7 @@ h2{
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
+    flex-wrap: wrap;
 }
 .footer .block .title{
     font-family: 'Raleway-bold';
