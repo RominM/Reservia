@@ -100,7 +100,7 @@ h2{
     padding-left: 15px;
 }
 
-.search .butt input{/*bouton "Rechercher"*/
+.search button{/*bouton "Rechercher"*/
     font-family: 'Raleway-Bold';
     font-size: 1.1em;
     color: white;
@@ -112,9 +112,10 @@ h2{
     background-color: #0065FC;
     cursor: pointer;
     outline: none;
+    transition: 0.2s;
 }
-.search .butt .place input:active{
-    transform: scale(0.8);
+.search button:active{
+    transform: scaleY(0.9);
 }
 /*section des filtres*/
 
@@ -137,6 +138,31 @@ h2{
     height: 50px;
     margin: 5px;
     padding-right: 15px;
+    box-shadow:0 2px 3px 0px rgba(0,0,0,0.25); /*TEST*/
+    transition: 0.2s; /*TEST*/
+}
+.filter a{/*link*/
+    text-decoration: none;
+    font-family: 'Raleway-black';
+    color: black;
+}
+.select:hover {/*TEST*/
+    filter:blur(3px);
+    opacity:.5;
+    transform: scale(.98);
+    box-shadow:none;
+  }
+  .select .link:hover{/*TEST*/
+    filter:blur(3px);
+    opacity:.5;
+    transform: scale(.98);
+    box-shadow:none;
+  }
+  .select:hover .link:hover{/*TEST*/
+    transform:scale(1);
+    filter:blur(0px);
+    opacity:1;
+    box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
 }
 .filter .select img{/*logo*/
     border: solid #DEEBFF;
@@ -148,11 +174,7 @@ h2{
     padding: 10px;
     background-color: #DEEBFF;
 }
-.filter a{/*link*/
-    text-decoration: none;
-    font-family: 'Raleway-black';
-    color: black;
-}
+
 
 /*section Info*/
 
