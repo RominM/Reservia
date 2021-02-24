@@ -116,7 +116,6 @@ h2{
     justify-content: space-between;
     align-items: center;
     max-width: 1000px;
-    border: solid;
 }
 .filter .txt{/*txt*/
     font-family: 'Raleway-black';
@@ -177,7 +176,6 @@ h2{
     justify-content: space-between;
     margin-bottom: 15px;
     height: 100%;
-    border: solid;
 }
 .star{
     display: flex;
