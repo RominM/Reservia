@@ -154,12 +154,7 @@ h2{
     background-color: #DEEBFF;
     transition: 0.3s;
 }
-.select:hover img{
-    transform: scale(1.05);
-    width: 28px;
-    height: 28px;
 
-}
 .filter a{/*link*/
     text-decoration: none;
     font-family: 'Raleway-black';
@@ -242,7 +237,7 @@ h2{
     transition: 0.3s;
 }
 .main .pop .element a .pic img{/*image*/
-    width: 75%;
+    width: 58%;
 }
 .main .pop .element a .link{/*Zone de texte*/
     position: absolute;
@@ -266,9 +261,8 @@ h2{
     color: black;
     margin: 10px;
 }
-.main .pop .element a:hover{
+.main .element a:hover{
     box-shadow: #a9a9a9 0px 2px 8px 2px;
-    
 }
 
 
@@ -276,7 +270,7 @@ h2{
 
 
 /*Hebergement à Marseille*/
-
+/*HEADER DE SECTION*/
 .main .housing{/*parent>article*/
     border-radius: 30px;
     display: flex;
@@ -285,55 +279,42 @@ h2{
     width: 940px;
     height: 620px;
     background-color: #F2F2F2;
+    margin-bottom: 20000px;
 }
 .main .housing .house_title h3{/*titre*/
     font-family: 'Raleway-black';
-    position: absolute;
     font-size: 1.4em;
 }
-
-.main .housing .squar{/*block image + texte*/
-    border: solid #fff 4px;
+/*BODY DE SECTION*/
+.main a{
+    position: relative;
+    overflow: hidden;
+    width: 280px;
+    height: 250px;
+    border: solid white 5px;
     border-radius: 20px;
-    background-color: #fff;
-    width: 250px;
-    height: 200px;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 33px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: white;
     transition: 0.3s;
 }
-.main .housing .squar a .pic img{/*image*/
+.housing img{
     width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    height: 50%;
 }
-.main .housing .squar a .link{/*Zone de texte*/
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    margin-top: -35px;
-    background-color: white;
-    color: black;
+.main .housing .link p{
+    border: solid;
 }
-.main .housing .squar a .link h6{
-    font-family: 'Raleway-black';
-    font-size: 1em;
-    margin-top: -15px;
-    padding-top: 10px;
-    padding-left: 15px;
-    background-color: white;
-}
-.main .housing .squar a .link p{
-    font-family: 'Raleway-Light';
-    margin-top: -35px;
-    padding-left: 15px;
-    margin-bottom: -15px;
-    background-color: white;
-}
+
+/*FOOTER DE SECTION*/
 .main .housing .more{/*afficher plus*/
     font-family: 'Raleway-black';
-    position: absolute;
-    align-self: flex-end;
 }
-.main .housing .squar:hover{
+/*HOVER DE SECTION*/
+.main a:hover{
     box-shadow: #a9a9a9 0px 2px 8px 2px;
 }
 
