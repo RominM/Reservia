@@ -45,10 +45,13 @@ body{
     justify-content: space-around;
     list-style: none;
 }
+
 .hebergements a{
-    text-decoration: overline 3px;
+    text-decoration: none;
     color: #0065FC;
     font-family: 'Raleway-Light';
+    border-top: solid #0065FC 5px;
+    padding-top: 35px;
 }
 .activités a{
     text-decoration: none;
@@ -60,6 +63,10 @@ body{
     text-decoration: none;
     font-family: 'Raleway-black';
     color: #0065FC;
+}
+.inscrire:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 h1{
@@ -115,7 +122,7 @@ h2{
     transition: 0.5s;
 }
 .search button:active{
-    transform: scaleY(0.9);
+    transform: scaleY(0.8);
 }
 /*section des filtres*/
 
@@ -124,10 +131,11 @@ h2{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 900px;
+    max-width: 1000px;
     margin-bottom: 10px;
 }
 .filter .txt{/*txt*/
+    margin-left: 15px;
     font-family: 'Raleway-black';
 }
 .select{/*child>.filter -- parent>logo+link*/
@@ -232,7 +240,7 @@ h2{
     align-items: center;
     margin-left: 33px;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     background-color: white;
     transition: 0.3s;
     box-shadow: 1px 0px 10px 0px grey;
@@ -270,7 +278,7 @@ h2{
     margin-left: 15px;
 }
 .main .element a:hover{
-    box-shadow: #a9a9a9 0px 2px 8px 2px;
+    box-shadow: #a9a9a9 0px 2px 18px 2px;
 }
 
 
@@ -286,15 +294,16 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 900px;
+    width: 950px;
     height: 620px;
     background-color: #F2F2F2;
     padding: 25px;
 }
 .main .housing .house_title h3{/*titre*/
-    font-family: 'Raleway-black';
+    font-family: 'Raleway-bold';
     font-size: 1.4em;
-    margin-right: 500px;
+    margin-right: 590px;
+    margin-top: 5px;
 }
 /*BODY DE SECTION*/
 .main .squar{
@@ -364,7 +373,8 @@ h2{
 }
 .activity .activity_title{
     position: absolute;
-    font-family: 'Raleway-black';
+    font-family: 'Raleway-bold';
+    font-size: 1.4em;
 }
 .activity .activity_left{
     display: flex;
@@ -376,16 +386,16 @@ h2{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 75px;
 }
 .activity .activity_flex{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 .activity .bp{
-    width: 300px;
+    width: 335px;
     height: 100%;
     box-shadow: black 1px 1px 10px 1px;
     border-radius: 20px;
@@ -400,7 +410,7 @@ h2{
     object-fit: cover;
 }
 .activity .mp{
-    width: 300px;
+    width: 335px;
     height: 300px;
     box-shadow: black 1px 1px 10px 1px;
     border-radius: 20px;
@@ -415,7 +425,7 @@ h2{
     object-fit: cover;
 }
 .activity .sp{
-    width: 300px;
+    width: 335px;
     height: 175px;
     box-shadow: black 1px 1px 10px 1px;
     border-radius: 20px;
@@ -439,6 +449,10 @@ h2{
 /*Footer*/
 
 .footer{
+    margin-left: -100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #F2F2F2;
@@ -447,11 +461,11 @@ h2{
 }
 .footer .block .title{
     font-family: 'Raleway-bold';
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 .footer .block .child a{
     font-family: 'Raleway-Light';
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: black;
 }
