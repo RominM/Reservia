@@ -20,8 +20,8 @@
 /*BODY*/
 
 body{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 /*section Heading*/
@@ -192,9 +192,9 @@ h2{
 }
 .star{
     display: flex;
-    width: 11px;
-    margin-top: 28px;
-    margin-left: 15px;
+    width: 15px;
+    /* margin-top: 28px;
+    margin-left: 15px; */
 }
 
 /*<aside> Les plus populaires*/
@@ -202,8 +202,8 @@ h2{
 .main .pop {/*parent*/
     border-radius: 30px;
     background-color: #F2F2F2;
-    height: 620px;
     width: 410px;
+    height: 670px;
     margin-bottom: 30px;
 }
 .main .pop .pop_title{/*titre + logo*/
@@ -235,9 +235,11 @@ h2{
     margin-bottom: 30px;
     background-color: white;
     transition: 0.3s;
+    box-shadow: 1px 0px 10px 0px grey;
 }
 .main .pop .element a .pic img{/*image*/
-    width: 58%;
+    width: 75%;
+    object-fit: cover;
 }
 .main .pop .element a .link{/*Zone de texte*/
     position: absolute;
@@ -249,17 +251,23 @@ h2{
 }
 .main .pop .element a .link h6{/*Nom de l'hotel*/
     font-family: 'Raleway-black';
-    font-size: 0.9em;
+    font-size: 1.1em;
     color: black;
     margin-left: 15px;
-    margin-top: 0;
-    margin-bottom: -5px;
+    padding-top: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 .main .pop .element a .link p{/*Nuit à partir de*/
-    font-size: 0.75em;
+    font-size: 1em;
     font-family: 'Raleway-Light';
     color: black;
     margin: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.element .star{
+    margin-left: 15px;
 }
 .main .element a:hover{
     box-shadow: #a9a9a9 0px 2px 8px 2px;
@@ -270,52 +278,77 @@ h2{
 
 
 /*Hebergement à Marseille*/
+
 /*HEADER DE SECTION*/
+
 .main .housing{/*parent>article*/
     border-radius: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 940px;
+    width: 900px;
     height: 620px;
     background-color: #F2F2F2;
-    margin-bottom: 20000px;
+    padding: 25px;
 }
 .main .housing .house_title h3{/*titre*/
     font-family: 'Raleway-black';
     font-size: 1.4em;
+    margin-right: 500px;
 }
 /*BODY DE SECTION*/
-.main a{
-    position: relative;
+.main .squar{
     overflow: hidden;
-    width: 280px;
-    height: 250px;
     border: solid white 5px;
     border-radius: 20px;
     text-decoration: none;
-    align-items: center;
-    margin-left: 33px;
-    margin-top: 10px;
-    margin-bottom: 30px;
     background-color: white;
     transition: 0.3s;
+    margin-bottom: 25px;
+    box-shadow: 1px 0px 10px 0px grey;
 }
-.housing img{
+.housing .pic{
+    width: 250px;
+    height: 70px;
+}
+.housing .imgFlex{
     width: 100%;
-    height: 50%;
+    height: 140px;
+    object-fit: cover;
 }
-.main .housing .link p{
-    border: solid;
+/*Zone ne Texte*/
+.link{
+    margin-left: 10px;
+}
+.link h6{
+    font-family: 'Raleway-bold';
+    font-size: 1.1em;
+    color: black;
+    padding-top: 38px;
+    margin-bottom: 6px;
+}
+.link p{
+    font-family: 'Raleway-Light';
+    font-size: 1em;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.link .star{
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 /*FOOTER DE SECTION*/
-.main .housing .more{/*afficher plus*/
+.housing .more a{/*afficher plus*/
     font-family: 'Raleway-black';
+    color: black;
+    margin-right: 750px;
+    text-decoration: none;
 }
 /*HOVER DE SECTION*/
-.main a:hover{
-    box-shadow: #a9a9a9 0px 2px 8px 2px;
+.main .squar:hover{
+    box-shadow: #a9a9a9 0px 2px 18px 2px;
 }
 
 
@@ -327,17 +360,17 @@ h2{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 15px;
-    padding-top: 15px;
     max-height: 100%;
 }
 .activity .activity_title{
     position: absolute;
+    font-family: 'Raleway-black';
 }
 .activity .activity_left{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 75px;
 }
 .activity .activity_right{
     display: flex;
@@ -353,7 +386,7 @@ h2{
 }
 .activity .bp{
     width: 300px;
-    height: 450px;
+    height: 100%;
     box-shadow: black 1px 1px 10px 1px;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -364,6 +397,7 @@ h2{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-right: 20px;
+    object-fit: cover;
 }
 .activity .mp{
     width: 300px;
@@ -378,6 +412,7 @@ h2{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-right: 20px;
+    object-fit: cover;
 }
 .activity .sp{
     width: 300px;
@@ -392,6 +427,7 @@ h2{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     margin-right: 20px;
+    object-fit: cover;
 }
 .activity a{/*text*/
     text-decoration: none;
@@ -407,6 +443,7 @@ h2{
     justify-content: space-between;
     background-color: #F2F2F2;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 .footer .block .title{
     font-family: 'Raleway-bold';
