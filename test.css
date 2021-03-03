@@ -1,0 +1,66 @@
+body{
+    background-color: brown;
+}
+
+
+
+.photo{/*pic*/
+    width: 250px;
+    height: 200px;
+    display: flex;
+}
+img{/*img*/
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .star{
+    display: flex;
+    width: 25px;
+}
+
+
+
+
+.support{cadre principal
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    height: 450px;
+    border: solid green 5px;
+}
+.test{cadre de chaque hotel
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+}
+
+.imgFlex{Image
+    width: 100%;
+    object-fit: cover;
+}
+
+.hotel{zone de texte
+    background-color: purple;
+} */
