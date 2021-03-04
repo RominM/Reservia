@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Raleway-black';
-    src: url(fonts/Raleway-Black.ttf) format('truetype');
+    font-family: 'Raleway-Medium';
+    src: url(fonts/Raleway-Medium.ttf) format('truetype');
 }
 
 @font-face {
@@ -23,35 +23,44 @@
 body {
     margin: 0;
     padding: 0;
-    position: absolute;
     width: 100%;
 }
 
 /*section Head*/
 
 .header {
-    position: absolute;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
     flex-wrap: wrap;
 }
 
-.headerLogo {
-    margin-left: 50px;
-    margin-top: 25px;
+.headLogo {
+    padding-top: 25px;
+    width: 100px;
 }
 
-.headerNav {
-    overflow: hidden;
-}
-
-.headerSignup{
-    border: solid 2px;
+.headLink {
     display: flex;
-    grid-area: auto;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-top: 30px;
 }
 
+.headLink a {
+    margin-left: 100px;
+    text-decoration: none;
+    font-family: 'Raleway-Medium';
+    font-size: 1.1em;
+}
+
+.headSignup a{
+    color: #0065FC;
+    
+}
 
 
 
