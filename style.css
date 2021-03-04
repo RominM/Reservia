@@ -1,105 +1,147 @@
-
-
-@font-face{
+@font-face {
     font-family: 'Raleway-black';
     src: url(fonts/Raleway-Black.ttf) format('truetype');
 }
+
 @font-face {
     font-family: 'Raleway-bold';
     src: url(fonts/Raleway-Bold.ttf) format('truetype');
 }
+
 @font-face {
     font-family: 'Raleway-ExtraBold';
     src: url(fonts/Raleway-ExtraBold.ttf) format('truetype');
 }
+
 @font-face {
-    font-family: 'Raleway-Light';
+    font-family: 'Raleway, Sans serif';
     src: url(fonts/Raleway-Light.ttf) format('truetype');
 }
 
 /*BODY*/
 
-body{
-    margin-left: 100px;
-    margin-right: 100px;
+body {
+    margin: 0px;
+    margin: 0px;
+    position: absolute;
+    width: 100%;
 }
 
-/*section Heading*/
+/*section Head*/
 
-.heading{
+.header {
+    position: absolute;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    height: 80px;
+    align-items: center;
+    flex-wrap: nowrap;
 }
-.logo img{
+
+.headerLogo {
+}
+
+.headerNav {
+    position: relative;
+}
+
+.header a {
+}
+
+.headerSignup {
+}
+
+
+
+
+
+
+
+
+
+/* .logo img {
     width: 100px;
     padding: 15px;
     margin-top: 0px;
-}
-.nav ul{
+} */
+
+/* .headNav ul{
     display: flex;
     height: 50px;
     width: 400px;
     align-items: center;
     justify-content: space-around;
     list-style: none;
-}
+    grid-area: navbar;
+} */
 
-.hebergements a{
+/* .hebergements a {
     text-decoration: none;
     color: #0065FC;
     font-family: 'Raleway-Light';
-    border-top: solid #0065FC 5px;
+    border-top: solid #0065FC 3px;
     padding-top: 35px;
-}
-.activités a{
+} */
+
+/* .activités a {
     text-decoration: none;
     color: black;
     font-family: 'Raleway-Light';
 }
-.inscrire a{
+
+.inscrire a {
     margin-right: 50px;
     text-decoration: none;
     font-family: 'Raleway-black';
     color: #0065FC;
 }
-.inscrire:hover{
+
+.inscrire:hover {
     transform: scale(1.1);
     transition: 0.3s;
-}
+} */
 
-h1{
+h1 {
+    margin-top: 100px;
     font-family: 'Raleway-ExtraBold';
     font-size: 1.3em;
 }
-h2{
+
+h2 {
     font-family: 'Raleway-Light';
     font-size: 1em;
 }
 
 /*section "Rechercher"*/
 
-.search{/*parent>marker + place + recherche*/
+#rechercher {
+    /*parent>marker + place + recherche*/
     display: flex;
     align-items: center;
     max-width: 450px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
-.search .marker{/*background du marker*/
-    width: 50px;
+
+#rechercher .marker {
+    /*background du marker*/
+    width: 55px;
     height: 55px;
     background-color: #F2F2F2;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-.marker img{/*img maker*/
+
+.marker img {
+    /*img maker*/
     width: 17px;
-    margin-left: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-top: 17px;
 }
-.search .place input{/*champs de saisie*/
+
+#rechercher .place input {
+    /*champs de saisie*/
     font-family: 'Raleway-Light';
     font-size: 1.2em;
     border: solid #F2F2F2 2px;
@@ -107,7 +149,8 @@ h2{
     padding-left: 15px;
 }
 
-.search button{/*bouton "Rechercher"*/
+#rechercher button {
+    /*bouton "Rechercher"*/
     font-family: 'Raleway-Bold';
     font-size: 1.1em;
     color: white;
@@ -121,12 +164,15 @@ h2{
     outline: none;
     transition: 0.5s;
 }
-.search button:active{
+
+#rechercher button:active {
     transform: scaleY(0.8);
 }
+
 /*section des filtres*/
 
-.filter{/*parent>txt + select*/
+.filter {
+    /*parent>txt + select*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -134,11 +180,15 @@ h2{
     max-width: 1000px;
     margin-bottom: 10px;
 }
-.filter .txt{/*txt*/
+
+.filter .txt {
+    /*txt*/
     margin-left: 15px;
     font-family: 'Raleway-black';
 }
-.select{/*child>.filter -- parent>logo+link*/
+
+.select {
+    /*child>.filter -- parent>logo+link*/
     display: flex;
     border: solid #F2F2F2;
     border-radius: 50px;
@@ -149,10 +199,13 @@ h2{
     transition: 0.3s;
     box-shadow: inset 5px -5px 5px 1px #F2F2F2;
 }
-.select:hover{
+
+.select:hover {
     box-shadow: inset -5px 5px 5px 1px #F2F2F2;
 }
-.filter .select img{/*logo*/
+
+.filter .select img {
+    /*logo*/
     border: solid #DEEBFF;
     border-radius: 50%;
     width: 25px;
@@ -163,7 +216,8 @@ h2{
     transition: 0.3s;
 }
 
-.filter a{/*link*/
+.filter a {
+    /*link*/
     text-decoration: none;
     font-family: 'Raleway-black';
     color: black;
@@ -172,25 +226,32 @@ h2{
 
 /*section Info*/
 
-.information{/*parent>info_logo + info_txt*/
+.information {
+    /*parent>info_logo + info_txt*/
     display: flex;
     align-items: center;
     margin-bottom: 15px;
 }
-.information .info_logo img{/*logo*/
+
+.information .info_logo img {
+    /*logo*/
     width: 8px;
     height: 8px;
     border: solid #F2F2F2 2px;
     border-radius: 50%;
     padding: 4px;
 }
-.information .info_txt{/*txt*/
+
+.information .info_txt {
+    /*txt*/
     font-family: 'Raleway-light';
     font-size: 0.8em;
     margin-left: 25px;
 }
+
 /*section .main*/
-.main{/*parent principal*/
+.main {
+    /*parent principal*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -198,7 +259,8 @@ h2{
     margin-bottom: 15px;
     height: 100%;
 }
-.star{
+
+.star {
     display: flex;
     width: 15px;
     /* margin-top: 28px;
@@ -207,28 +269,37 @@ h2{
 
 /*<aside> Les plus populaires*/
 
-.main .pop {/*parent*/
+.main .pop {
+    /*parent*/
     border-radius: 30px;
     background-color: #F2F2F2;
     width: 410px;
     height: 670px;
     margin-bottom: 30px;
 }
-.main .pop .pop_title{/*titre + logo*/
+
+.main .pop .pop_title {
+    /*titre + logo*/
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
     margin-left: 30px;
 }
-.main .pop .pop_title h3{/*titre*/
+
+.main .pop .pop_title h3 {
+    /*titre*/
     font-family: 'Raleway-bold';
     font-size: 1.4em;
 }
-.main .pop .pop_title img{/*logo*/
+
+.main .pop .pop_title img {
+    /*logo*/
     width: 22px;
     margin-right: 40px;
 }
-.main .pop .element a{/*block image + texte*/
+
+.main .pop .element a {
+    /*block image + texte*/
     position: relative;
     overflow: hidden;
     display: flex;
@@ -245,11 +316,15 @@ h2{
     transition: 0.3s;
     box-shadow: 1px 0px 10px 0px grey;
 }
-.main .pop .element a .pic img{/*image*/
+
+.main .pop .element a .pic img {
+    /*image*/
     width: 75%;
     object-fit: cover;
 }
-.main .pop .element a .link{/*Zone de texte*/
+
+.main .pop .element a .link {
+    /*Zone de texte*/
     position: absolute;
     height: 100%;
     width: 175px;
@@ -257,7 +332,9 @@ h2{
     padding-top: 15px;
     background-color: white;
 }
-.main .pop .element a .link h6{/*Nom de l'hotel*/
+
+.main .pop .element a .link h6 {
+    /*Nom de l'hotel*/
     font-family: 'Raleway-black';
     font-size: 1.1em;
     color: black;
@@ -266,7 +343,9 @@ h2{
     margin-top: 10px;
     margin-bottom: 0;
 }
-.main .pop .element a .link p{/*Nuit à partir de*/
+
+.main .pop .element a .link p {
+    /*Nuit à partir de*/
     font-size: 1em;
     font-family: 'Raleway-Light';
     color: black;
@@ -274,10 +353,12 @@ h2{
     margin-left: 15px;
     margin-bottom: 15px;
 }
-.element .star{
+
+.element .star {
     margin-left: 15px;
 }
-.main .element a:hover{
+
+.main .element a:hover {
     box-shadow: #a9a9a9 0px 2px 18px 2px;
 }
 
@@ -289,7 +370,8 @@ h2{
 
 /*HEADER DE SECTION*/
 
-.main .housing{/*parent>article*/
+.main .housing {
+    /*parent>article*/
     border-radius: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -299,14 +381,17 @@ h2{
     background-color: #F2F2F2;
     padding: 25px;
 }
-.main .housing .house_title h3{/*titre*/
+
+.main .housing .house_title h3 {
+    /*titre*/
     font-family: 'Raleway-bold';
     font-size: 1.4em;
     margin-right: 590px;
     margin-top: 5px;
 }
+
 /*BODY DE SECTION*/
-.main .squar{
+.main .squar {
     overflow: hidden;
     border: solid white 5px;
     border-radius: 20px;
@@ -316,54 +401,62 @@ h2{
     margin-bottom: 25px;
     box-shadow: 1px 0px 10px 0px grey;
 }
-.housing .pic{
+
+.housing .pic {
     width: 250px;
     height: 70px;
 }
-.housing .imgFlex{
+
+.housing .imgFlex {
     width: 100%;
     height: 140px;
     object-fit: cover;
 }
+
 /*Zone ne Texte*/
-.link{
+.link {
     margin-left: 10px;
 }
-.link h6{
+
+.link h6 {
     font-family: 'Raleway-bold';
     font-size: 1.1em;
     color: black;
     padding-top: 38px;
     margin-bottom: 6px;
 }
-.link p{
+
+.link p {
     font-family: 'Raleway-Light';
     font-size: 1em;
     color: black;
     margin-top: 10px;
     margin-bottom: 0px;
 }
-.link .star{
+
+.link .star {
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
 /*FOOTER DE SECTION*/
-.housing .more a{/*afficher plus*/
+.housing .more a {
+    /*afficher plus*/
     font-family: 'Raleway-black';
     color: black;
     margin-right: 750px;
     text-decoration: none;
 }
+
 /*HOVER DE SECTION*/
-.main .squar:hover{
+.main .squar:hover {
     box-shadow: #a9a9a9 0px 2px 18px 2px;
 }
 
 
 /*Activité à Marseille*/
 
-.activity{
+.activity {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -371,37 +464,43 @@ h2{
     margin-bottom: 15px;
     max-height: 100%;
 }
-.activity .activity_title{
+
+.activity .activity_title {
     position: absolute;
     font-family: 'Raleway-bold';
     font-size: 1.4em;
 }
-.activity .activity_left{
+
+.activity .activity_left {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 75px;
 }
-.activity .activity_right{
+
+.activity .activity_right {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 75px;
 }
-.activity .activity_flex{
+
+.activity .activity_flex {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 50px;
 }
-.activity .bp{
+
+.activity .bp {
     width: 335px;
     height: 100%;
     box-shadow: black 1px 1px 10px 1px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
-.activity .bp img{
+
+.activity .bp img {
     width: 100%;
     height: 90%;
     border-top-left-radius: 20px;
@@ -409,14 +508,16 @@ h2{
     margin-right: 20px;
     object-fit: cover;
 }
-.activity .mp{
+
+.activity .mp {
     width: 335px;
     height: 300px;
     box-shadow: black 1px 1px 10px 1px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
-.activity .mp img{
+
+.activity .mp img {
     width: 100%;
     height: 85%;
     border-top-left-radius: 20px;
@@ -424,14 +525,16 @@ h2{
     margin-right: 20px;
     object-fit: cover;
 }
-.activity .sp{
+
+.activity .sp {
     width: 335px;
     height: 175px;
     box-shadow: black 1px 1px 10px 1px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
-.activity .sp img{
+
+.activity .sp img {
     width: 100%;
     height: 75%;
     border-top-left-radius: 20px;
@@ -439,7 +542,9 @@ h2{
     margin-right: 20px;
     object-fit: cover;
 }
-.activity a{/*text*/
+
+.activity a {
+    /*text*/
     text-decoration: none;
     text-align: center;
     font-family: 'Raleway-bold';
@@ -448,7 +553,7 @@ h2{
 
 /*Footer*/
 
-.footer{
+.footer {
     margin-left: -100px;
     padding-left: 100px;
     padding-right: 100px;
@@ -459,11 +564,13 @@ h2{
     flex-wrap: wrap;
     margin-top: 50px;
 }
-.footer .block .title{
+
+.footer .block .title {
     font-family: 'Raleway-bold';
     font-size: 1.2em;
 }
-.footer .block .child a{
+
+.footer .block .child a {
     font-family: 'Raleway-Light';
     text-decoration: none;
     font-size: 0.9em;
