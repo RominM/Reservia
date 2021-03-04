@@ -21,8 +21,8 @@
 /*BODY*/
 
 body {
-    margin: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     position: absolute;
     width: 100%;
 }
@@ -33,23 +33,31 @@ body {
     position: absolute;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .headerLogo {
+    margin-left: 50px;
+    margin-top: 25px;
 }
 
 .headerNav {
-    position: relative;
+    overflow: hidden;
 }
 
-.header a {
+.headerSignup{
+    border: solid 2px;
+    display: flex;
+    grid-area: auto;
 }
 
-.headerSignup {
-}
+
+
+
+
+
+
 
 
 
