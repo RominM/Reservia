@@ -101,6 +101,80 @@ h2 {
     font-size: 0.95em;
 }
 
+@media screen and (max-width: 600px)
+{
+    .header{
+    }
+    .headNav{
+        width: ;
+        margin: auto;
+    }
+    .headNavLink1 {
+        padding-bottom: 27px;
+        padding-right: 30px;
+        padding-left: 30px;
+        color: #0065FC;
+        border-top: none;
+        border-bottom: solid 4px;
+    }
+
+    .header .headNavLink2 {
+        padding-bottom: 27px;
+        padding-right: 30px;
+        padding-left: 30px;
+        color: #000;
+        transition: 0.3s;
+        border-bottom: solid 4px #a9a9a9;
+    }
+
+    .headSignup{
+        position: relative;
+    }
+
+    .header .headNavLink2:hover {
+        border-top: none;
+        border-bottom: solid 4px;
+        color: #0065FC;
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*section "Rechercher"*/
 
 #rechercher {
