@@ -265,89 +265,72 @@ h2 {
 
 /*SECTION N°2*/
 
-/* .filter {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin-bottom: 10px;
-} */
-
-/* .filter .txt {
-    margin-left: 15px;
-    font-family: 'Raleway-black';
-} */
-
-/* .select {
-    display: flex;
-    border: solid #F2F2F2;
-    border-radius: 50px;
-    align-items: center;
-    height: 55px;
-    margin: 5px;
-    padding-right: 15px;
-    transition: 0.3s;
-    box-shadow: inset 5px -5px 5px 1px #F2F2F2;
-} */
-
-/* .select:hover {
-    box-shadow: inset -5px 5px 5px 1px #F2F2F2;
-} */
-
-/* .filter img {
-    border: solid #DEEBFF;
-    border-radius: 50%;
-    width: 20px;
-    margin-top: 5px;
-    margin-right: 10px;
-    background-color: #DEEBFF;
-    transition: 0.3s;
-} */
-
-/* .filter a {
-    text-decoration: none;
-    font-family: 'Raleway-black';
-    color: black;
-} */
-
-
-
-
-
-
-
-
 .filter{
-    border: solid blue;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
     max-width: 900px;
 }
 
 .filter .choice {
-    border: solid #000;
+    border: solid #F2F2F2;
     display: flex;
-    border-radius: 20px;
+    border-radius: 30px;
     align-items: center;
     text-decoration: none;
-
+    height: 52px;
+    padding-right: 15px;
+    box-shadow: inset 5px -5px 5px 1px #dfdfdf;
+    transition: 0.3s;
 }
 
 .filter .choice img {
-    border: solid red;
-    border
     width: auto;
-    height: 25px;
+    height: 20px;
+    margin-top: 19px;
+}
+
+.filter .choice .img{
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #DEEBFF;
+    margin-left: -7px;
+    transition: 0.3s;
 }
 
 .filter .choice p, .filter p {
-    border: solid greenyellow;
     font-family: 'Raleway-bold';
-    font-size: 1.2em;
+    font-size: 1em;
+    text-align: center;
+    color: #000;
+    margin-left: 12px;
 }
 
+.choice:hover .img{
+    transform: scale(1.07);
+}
 
+.choice:hover {
+    box-shadow: inset -5px 5px 5px 1px #dfdfdf;
+}
+
+@media screen and (max-width: 600px) {/*SECTION N°2*/
+    
+    .filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 25px;
+    }
+
+    .filter .choice {
+        margin-bottom: 15px;
+    }
+
+}
 
 
 
