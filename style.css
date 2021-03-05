@@ -27,8 +27,6 @@ body {
 /*HEAD*/
 
 .header {
-    width: 100%;
-    margin: auto;
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     text-align: center;
@@ -55,31 +53,36 @@ body {
     color: #0065FC;
     border-top: solid 4px;
     padding-top: 39px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-decoration: none;
     font-family: 'Raleway-Medium';
     font-size: 1.1em;
 }
 
 .header .headNavLink2 {
-    color: #000;
     text-decoration: none;
-    transition: 0.3s;
-    border-top: solid 4px transparent;
     padding-top: 40px;
     padding-left: 25px;
     padding-right: 25px;
+    color: #000;
+    border-top: solid 4px transparent;
+    transition: 0.3s;
 }
 
 .header .headNavLink2:hover {
     border-top: solid 4px;
     padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
     color: #0065FC;
 }
 
 .header .headSignup {
     color: #0065FC;
     padding-top: 43px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-family: 'Raleway-bold';
     text-decoration: none;
     font-size: 1.1em;
@@ -107,7 +110,11 @@ h2 {
 
 /*FORMULAIRE*/
 
-#rechercher {
+#search .searchlogo{
+    width: 25px;
+    opacity: 0;
+}
+#search {
     display: flex;
     align-items: center;
     max-width: 450px;
@@ -115,8 +122,7 @@ h2 {
     margin-top: 20px;
 }
 
-#rechercher .marker {
-    /*background du marker*/
+#search .marker {
     width: 55px;
     height: 55px;
     background-color: #F2F2F2;
@@ -125,15 +131,13 @@ h2 {
 }
 
 .marker img {
-    /*img maker*/
     width: 17px;
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 17px;
 }
 
-#rechercher .place input {
-    /*champs de saisie*/
+#search .place input {
     font-family: 'Raleway-Light';
     font-size: 1.2em;
     border: solid #F2F2F2 2px;
@@ -141,8 +145,7 @@ h2 {
     padding-left: 15px;
 }
 
-#rechercher button {
-    /*bouton "Rechercher"*/
+#search .txt {
     font-family: 'Raleway-Bold';
     font-size: 1.1em;
     color: white;
@@ -155,14 +158,13 @@ h2 {
     cursor: pointer;
     outline: none;
     transition: 0.5s;
-}
-
-#rechercher button:active {
-    transform: scaleY(0.8);
+    opacity: 1;
 }
 
 @media screen and (max-width: 600px)
 {
+    /*HEAD*/
+
     .header{
     }
 
@@ -213,6 +215,17 @@ h2 {
         width: 50%;
     }
     
+    /*SEARCH*/
+
+    #search .searchlogo{
+        width: 25px;
+        opacity: 1;
+    }
+    
+    #search .txt {
+        opacity: 0;
+    }
+
 }
 
 
