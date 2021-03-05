@@ -295,7 +295,7 @@ h2 {
     box-shadow: inset -5px 5px 5px 1px #F2F2F2;
 } */
 
-.filter img {
+/* .filter img {
     border: solid #DEEBFF;
     border-radius: 50%;
     width: 20px;
@@ -303,7 +303,7 @@ h2 {
     margin-right: 10px;
     background-color: #DEEBFF;
     transition: 0.3s;
-}
+} */
 
 /* .filter a {
     text-decoration: none;
@@ -319,24 +319,32 @@ h2 {
 
 
 .filter{
+    border: solid blue;
     display: flex;
+    justify-content: space-around;
+    max-width: 900px;
 }
 
 .filter .choice {
+    border: solid #000;
     display: flex;
-    border: solid;
-}
+    border-radius: 20px;
+    align-items: center;
+    text-decoration: none;
 
-.filter .choice .img {
-    border: solid orange;
 }
 
 .filter .choice img {
     border: solid red;
+    border
+    width: auto;
+    height: 25px;
 }
 
 .filter .choice p, .filter p {
     border: solid greenyellow;
+    font-family: 'Raleway-bold';
+    font-size: 1.2em;
 }
 
 
