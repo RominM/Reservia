@@ -62,8 +62,10 @@ body {
 
 .header .headNavLink2 {
     color: #000;
-    transition: 0.3s;
     text-decoration: none;
+    transition: 0.3s;
+    border-top: solid 4px transparent;
+    padding-top: 40px;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -84,61 +86,6 @@ body {
     grid-column: 4;
 }
 
-@media screen and (max-width: 600px)
-{
-    .header{
-    }
-
-    .header a{
-        text-decoration: none;
-    }
-    .headLogo{
-        order: 1;
-        margin-top: 0;
-        padding-top: 10px;
-        padding-left: 20px;
-    }
-
-    .headSignup{
-        order: 2;
-        margin-right: 10px;
-    }
-
-    .headNav{
-        order: 3;
-        grid-column: 1/5;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-        width: 100%;
-        margin: 0;
-    }
-
-    .headNavLink1 {
-        padding-top: 0;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 25px;
-        color: #0065FC;
-        border-top: none;
-        border-bottom: solid 4px;
-        width: 50%;
-    }
-
-    .header .headNavLink2 {
-        padding-top: 0;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 28px;
-        color: #000;
-        border-bottom: solid 4px #F2F2F2;
-        width: 50%;
-    }
-    
-}
-
-
 /*SECTION N°1*/
 
 .title{
@@ -149,56 +96,18 @@ body {
 h1 {
     margin: 0;
     font-family: 'Raleway-ExtraBold';
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 h2 {
     margin-top: 7px;
     font-family: 'Raleway-Light';
-    font-size: 0.95em;
+    font-size: 1em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*section "Rechercher"*/
+/*FORMULAIRE*/
 
 #rechercher {
-    /*parent>marker + place + recherche*/
     display: flex;
     align-items: center;
     max-width: 450px;
@@ -251,6 +160,99 @@ h2 {
 #rechercher button:active {
     transform: scaleY(0.8);
 }
+
+@media screen and (max-width: 600px)
+{
+    .header{
+    }
+
+    .header a{
+        text-decoration: none;
+    }
+    .headLogo{
+        order: 1;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .headSignup{
+        order: 2;
+        margin-right: 10px;
+    }
+
+    .headNav{
+        order: 3;
+        grid-column: 1/5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .headNavLink1 {
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 12px;
+        color: #0065FC;
+        border-top: none;
+        border-bottom: solid 4px;
+        width: 50%;
+    }
+
+    .header .headNavLink2 {
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 15px;
+        color: #000;
+        border-bottom: solid 4px #F2F2F2;
+        width: 50%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*section "Rechercher"*/
+
 
 /*section des filtres*/
 
