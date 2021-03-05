@@ -41,7 +41,7 @@ body {
     cursor: pointer;
 }
 
-.headNav{
+.headNav {
     padding-top: 27px;
     margin-top: 15px;
     padding-bottom: 15px;
@@ -91,9 +91,67 @@ body {
     grid-column: 4;
 }
 
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+    }
+
+    /*HEAD*/
+
+    .header a {
+        text-decoration: none;
+    }
+
+    .headLogo {
+        order: 1;
+        margin-top: 0;
+        margin-left: 25px;
+        padding-top: 10px;
+        padding-left: 0;
+    }
+
+    .headSignup {
+        order: 2;
+    }
+
+    .headNav {
+        order: 3;
+        grid-column: 1/5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        font-size: 1em;
+    }
+
+    .headNavLink1 {
+        padding-top: 15px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 17px;
+        color: #0065FC;
+        border-top: none;
+        border-bottom: solid 4px;
+        width: 50%;
+    }
+
+    .header .headNavLink2 {
+        padding-top: 15px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 15px;
+        color: #000;
+        border-bottom: solid 4px #F2F2F2;
+        width: 50%;
+    }
+}
+
 /*SECTION N°1*/
 
-.title{
+.title {
     width: 90%;
     margin-left: 50px;
 }
@@ -108,6 +166,15 @@ h2 {
     margin-top: 7px;
     font-family: 'Raleway-Light';
     font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    /*SECTION N°1*/
+
+    .title {
+        margin-left: 15px;
+        margin-top: 15px;
+    }
 }
 
 /*FORMULAIRE*/
@@ -148,7 +215,7 @@ h2 {
     width: 150px;
 }
 
-#search button{
+#search button {
     position: absolute;
     border: none;
     color: #fff;
@@ -162,107 +229,115 @@ h2 {
     cursor: pointer;
 }
 
-#search p{
+#search p {
     font-family: 'Raleway-bold';
     font-size: 1.1em;
 }
 
 #search button img {
     width: 25px;
-    opacity:0;
+    opacity: 0;
 }
 
-@media screen and (max-width: 600px)
-{
-    body {
-        width: 100%;
-    }
-
-    /*HEAD*/
-
-    .header a{
-        text-decoration: none;
-    }
-    .headLogo{
-        order: 1;
-        margin-top: 0;
-        margin-left: 25px;
-        padding-top: 10px;
-        padding-left: 0;
-    }
-
-    .headSignup{
-        order: 2;
-    }
-
-    .headNav{
-        order: 3;
-        grid-column: 1/5;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-        width: 100%;
-        margin: 0;
-        font-size: 1em;
-
-    }
-
-    .headNavLink1 {
-        padding-top: 15px;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 17px;
-        color: #0065FC;
-        border-top: none;
-        border-bottom: solid 4px;
-        width: 50%;
-    }
-
-    .header .headNavLink2 {
-        padding-top: 15px;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 15px;
-        color: #000;
-        border-bottom: solid 4px #F2F2F2;
-        width: 50%;
-    }
-
-    /*TITLE*/
-
-    .title {
-        margin-left: 15px;
-        margin-top: 15px;
-    }
-    
-    /*SEARCH*/
+@media screen and (max-width: 600px) {/*FORMULAIRE*/
 
     #search {
         width: 300px;
         margin: auto;
     }
+
     #search p {
         opacity: 0;
     }
 
-    #search button{
+    #search button {
         width: 55px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
 
-    #search button img {  
-        border: solid #000;      
+    #search button img {
+        border: solid #000;
         width: 20px;
         opacity: 1;
     }
-
-    
 }
 
+/*SECTION N°2*/
+
+/* .filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin-bottom: 10px;
+} */
+
+/* .filter .txt {
+    margin-left: 15px;
+    font-family: 'Raleway-black';
+} */
+
+/* .select {
+    display: flex;
+    border: solid #F2F2F2;
+    border-radius: 50px;
+    align-items: center;
+    height: 55px;
+    margin: 5px;
+    padding-right: 15px;
+    transition: 0.3s;
+    box-shadow: inset 5px -5px 5px 1px #F2F2F2;
+} */
+
+/* .select:hover {
+    box-shadow: inset -5px 5px 5px 1px #F2F2F2;
+} */
+
+.filter img {
+    border: solid #DEEBFF;
+    border-radius: 50%;
+    width: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+    background-color: #DEEBFF;
+    transition: 0.3s;
+}
+
+/* .filter a {
+    text-decoration: none;
+    font-family: 'Raleway-black';
+    color: black;
+} */
 
 
+
+
+
+
+
+
+.filter{
+    display: flex;
+}
+
+.filter .choice {
+    display: flex;
+    border: solid;
+}
+
+.filter .choice .img {
+    border: solid orange;
+}
+
+.filter .choice img {
+    border: solid red;
+}
+
+.filter .choice p, .filter p {
+    border: solid greenyellow;
+}
 
 
 
@@ -302,57 +377,6 @@ h2 {
 
 /*section des filtres*/
 
-.filter {
-    /*parent>txt + select*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin-bottom: 10px;
-}
-
-.filter .txt {
-    /*txt*/
-    margin-left: 15px;
-    font-family: 'Raleway-black';
-}
-
-.select {
-    /*child>.filter -- parent>logo+link*/
-    display: flex;
-    border: solid #F2F2F2;
-    border-radius: 50px;
-    align-items: center;
-    height: 55px;
-    margin: 5px;
-    padding-right: 15px;
-    transition: 0.3s;
-    box-shadow: inset 5px -5px 5px 1px #F2F2F2;
-}
-
-.select:hover {
-    box-shadow: inset -5px 5px 5px 1px #F2F2F2;
-}
-
-.filter .select img {
-    /*logo*/
-    border: solid #DEEBFF;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    margin-top: 5px;
-    margin-right: 10px;
-    background-color: #DEEBFF;
-    transition: 0.3s;
-}
-
-.filter a {
-    /*link*/
-    text-decoration: none;
-    font-family: 'Raleway-black';
-    color: black;
-}
 
 
 /*section Info*/
