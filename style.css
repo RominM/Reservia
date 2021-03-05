@@ -35,8 +35,10 @@ body {
 
 .headLogo {
     width: 100px;
-    padding-left: 50px;
-    padding-top: 15px;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    cursor: pointer;
 }
 
 .headNav{
@@ -169,6 +171,10 @@ h2 {
 
 @media screen and (max-width: 600px)
 {
+    body {
+        width: 100%;
+    }
+
     /*HEAD*/
 
     .header a{
@@ -177,8 +183,9 @@ h2 {
     .headLogo{
         order: 1;
         margin-top: 0;
+        margin-left: 25px;
         padding-top: 10px;
-        padding-left: 20px;
+        padding-left: 0;
     }
 
     .headSignup{
@@ -194,10 +201,12 @@ h2 {
         padding: 0;
         width: 100%;
         margin: 0;
+        font-size: 1em;
+
     }
 
     .headNavLink1 {
-        padding-top: 0;
+        padding-top: 15px;
         padding-right: 0;
         padding-left: 0;
         padding-bottom: 17px;
@@ -208,13 +217,20 @@ h2 {
     }
 
     .header .headNavLink2 {
-        padding-top: 0;
+        padding-top: 15px;
         padding-right: 0;
         padding-left: 0;
         padding-bottom: 15px;
         color: #000;
         border-bottom: solid 4px #F2F2F2;
         width: 50%;
+    }
+
+    /*TITLE*/
+
+    .title {
+        margin-left: 15px;
+        margin-top: 15px;
     }
     
     /*SEARCH*/
@@ -234,6 +250,8 @@ h2 {
         opacity: 1;
         margin-top: -15px;
     }
+
+    
 }
 
 
