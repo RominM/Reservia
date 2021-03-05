@@ -37,12 +37,14 @@ body {
 
 .headLogo {
     width: 100px;
+    padding-left: 50px;
+    padding-top: 15px;
 }
 
 .headNav{
     padding-top: 27px;
+    margin-top: 15px;
     padding-bottom: 15px;
-    padding-right: 30px;
     padding-left: 30px;
     font-family: 'Raleway-Medium';
     font-size: 1.1em;
@@ -52,13 +54,10 @@ body {
 .headNavLink1 {
     color: #0065FC;
     border-top: solid 4px;
-    padding-top: 25px;
+    padding-top: 39px;
     text-decoration: none;
     font-family: 'Raleway-Medium';
     font-size: 1.1em;
-    padding-left: 25px;
-    padding-right: 25px;
-
 }
 
 .header .headNavLink2 {
@@ -71,20 +70,74 @@ body {
 
 .header .headNavLink2:hover {
     border-top: solid 4px;
-    padding-top: 27px;
+    padding-top: 40px;
     color: #0065FC;
 }
 
 .header .headSignup {
     color: #0065FC;
-    padding-top: 30px;
+    padding-top: 43px;
     padding-right: 20px;
-    padding-left: 20px;
     font-family: 'Raleway-bold';
     text-decoration: none;
     font-size: 1.1em;
     grid-column: 4;
 }
+
+@media screen and (max-width: 600px)
+{
+    .header{
+    }
+
+    .header a{
+        text-decoration: none;
+    }
+    .headLogo{
+        order: 1;
+        margin-top: 0;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .headSignup{
+        order: 2;
+        margin-right: 10px;
+    }
+
+    .headNav{
+        order: 3;
+        grid-column: 1/5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .headNavLink1 {
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 25px;
+        color: #0065FC;
+        border-top: none;
+        border-bottom: solid 4px;
+        width: 50%;
+    }
+
+    .header .headNavLink2 {
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 28px;
+        color: #000;
+        border-bottom: solid 4px #F2F2F2;
+        width: 50%;
+    }
+    
+}
+
 
 /*SECTION N°1*/
 
@@ -105,57 +158,6 @@ h2 {
     font-size: 0.95em;
 }
 
-@media screen and (max-width: 700px)
-{
-    .header{
-        display: grid;
-        grid-template-columns: auto 1fr auto;
-    }
-
-    .header a{
-        text-decoration: none;
-    }
-    .headLogo{
-        order: 1;
-    }
-
-    .headSignup{
-        order: 2;
-    }
-
-    .headNav{
-        order: 3;
-        display: flex;
-        /* grid-template-columns: auto; */
-        /* grid-column: 2; */
-    }
-
-    .headNavLink1 {
-        padding-bottom: 27px;
-        padding-right: 25px;
-        padding-left: 25px;
-        color: #0065FC;
-        border-top: none;
-        border-bottom: solid 4px;
-        width: 50%;
-    }
-
-    .header .headNavLink2 {
-        padding-bottom: 27px;
-        padding-right: 25px;
-        padding-left: 25px;
-        color: #000;
-        /* transition: 0.3s; */
-        border-bottom: solid 4px #a9a9a9;
-        width: 50%;
-    }
-
-    .headerSignup{
-        /* grid-column: 3;
-        order: 1; */
-    }
-
-}
 
 
 
