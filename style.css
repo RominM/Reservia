@@ -123,7 +123,7 @@ h2 {
 
 #search .marker {
     width: 55px;
-    height: 55px;
+    height: 50px;
     background-color: #F2F2F2;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -142,7 +142,7 @@ h2 {
     font-family: 'Raleway-Medium';
     font-size: 1.15em;
     border: solid #F2F2F2 2px;
-    height: 49px;
+    height: 44px;
     padding-left: 15px;
     padding-right: 45px;
     width: 150px;
@@ -155,18 +155,21 @@ h2 {
     background-color: #0065FC;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    height: 54px;
+    height: 50px;
     width: 125px;
     margin-left: 245px;
-    font-family: 'Raleway-bold';
-    font-size: 1.1em;
     opacity: 1;
     cursor: pointer;
 }
 
-#search .searchlogo {
+#search p{
+    font-family: 'Raleway-bold';
+    font-size: 1.1em;
+}
+
+#search button img {
     width: 25px;
-    opacity: 0;
+    opacity:0;
 }
 
 @media screen and (max-width: 600px)
@@ -235,7 +238,11 @@ h2 {
     
     /*SEARCH*/
 
-    #search .txt {
+    #search {
+        width: 300px;
+        margin: auto;
+    }
+    #search p {
         opacity: 0;
     }
 
@@ -245,10 +252,10 @@ h2 {
         border-bottom-left-radius: 20px;
     }
 
-    #search .searchlogo{
-        width: 25px;
+    #search button img {  
+        border: solid #000;      
+        width: 20px;
         opacity: 1;
-        margin-top: -15px;
     }
 
     
