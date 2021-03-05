@@ -27,50 +27,51 @@ body {
 /*HEAD*/
 
 .header {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
     text-align: center;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .headLogo {
-    padding-top: 25px;
     width: 100px;
 }
 
-.headLink {
-    display: flex;
-    align-items: flex-end;
-}
-
-.headLink a {
-    text-decoration: none;
+.headNav{
+    padding-top: 27px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
     font-family: 'Raleway-Medium';
     font-size: 1.1em;
+    grid-column: 3;
 }
 
 .headNavLink1 {
-    padding-top: 27px;
-    padding-right: 30px;
-    padding-left: 30px;
     color: #0065FC;
     border-top: solid 4px;
+    padding-top: 25px;
+    text-decoration: none;
+    font-family: 'Raleway-Medium';
+    font-size: 1.1em;
+    padding-left: 25px;
+    padding-right: 25px;
+
 }
 
 .header .headNavLink2 {
-    padding-top: 27px;
-    padding-right: 30px;
-    padding-left: 30px;
     color: #000;
     transition: 0.3s;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .header .headNavLink2:hover {
     border-top: solid 4px;
+    padding-top: 27px;
     color: #0065FC;
 }
 
@@ -80,6 +81,9 @@ body {
     padding-right: 20px;
     padding-left: 20px;
     font-family: 'Raleway-bold';
+    text-decoration: none;
+    font-size: 1.1em;
+    grid-column: 4;
 }
 
 /*SECTION N°1*/
@@ -101,41 +105,55 @@ h2 {
     font-size: 0.95em;
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 700px)
 {
     .header{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
     }
+
+    .header a{
+        text-decoration: none;
+    }
+    .headLogo{
+        order: 1;
+    }
+
+    .headSignup{
+        order: 2;
+    }
+
     .headNav{
-        width: ;
-        margin: auto;
+        order: 3;
+        display: flex;
+        /* grid-template-columns: auto; */
+        /* grid-column: 2; */
     }
+
     .headNavLink1 {
         padding-bottom: 27px;
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 25px;
+        padding-left: 25px;
         color: #0065FC;
         border-top: none;
         border-bottom: solid 4px;
+        width: 50%;
     }
 
     .header .headNavLink2 {
         padding-bottom: 27px;
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 25px;
+        padding-left: 25px;
         color: #000;
-        transition: 0.3s;
+        /* transition: 0.3s; */
         border-bottom: solid 4px #a9a9a9;
+        width: 50%;
     }
 
-    .headSignup{
-        position: relative;
+    .headerSignup{
+        /* grid-column: 3;
+        order: 1; */
     }
-
-    .header .headNavLink2:hover {
-        border-top: none;
-        border-bottom: solid 4px;
-        color: #0065FC;
-        }
 
 }
 
