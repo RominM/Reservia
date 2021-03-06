@@ -93,13 +93,15 @@ body {
 @media screen and (max-width: 600px) {
 
     body {
-        width: 100%;
+        max-width: 100%;
     }
 
     /*HEAD*/
 
     .header{
         width: 100%;
+        /* margin: auto; */
+        margin-right: 0;
     }
     .header a {
         text-decoration: none;
@@ -148,6 +150,7 @@ body {
         color: #000;
         border-bottom: solid 4px #F2F2F2;
         width: 50%;
+        margin: 0;
     }
 }
 
@@ -403,7 +406,6 @@ h2 {
     font-family: 'Raleway-Extrabold';
 }
 .housing .cards {
-    over
     /* width: 30%; */
     height: 200px;
     border: solid white 5px;
