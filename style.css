@@ -31,11 +31,12 @@ body {
     grid-template-columns: auto 1fr auto auto;
     text-align: center;
     padding-bottom: 20px;
+    width: 90%;
+    margin: auto;
 }
 
 .headLogo {
     width: 100px;
-    margin-left: 50px;
     margin-top: 15px;
     margin-bottom: 0;
     cursor: pointer;
@@ -44,19 +45,19 @@ body {
 .headNav {
     padding-top: 27px;
     margin-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
+    padding-left: 50px;
     font-family: 'Raleway-Medium';
     font-size: 1.1em;
     grid-column: 3;
+    /* border: solid; */
 }
 
 .headNavLink1 {
     color: #0065FC;
     border-top: solid 4px;
     padding-top: 39px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-decoration: none;
     font-family: 'Raleway-Medium';
     font-size: 1.1em;
@@ -65,8 +66,8 @@ body {
 .header .headNavLink2 {
     text-decoration: none;
     padding-top: 40px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
     color: #000;
     border-top: solid 4px transparent;
     transition: 0.3s;
@@ -75,8 +76,6 @@ body {
 .header .headNavLink2:hover {
     border-top: solid 4px;
     padding-top: 40px;
-    padding-left: 25px;
-    padding-right: 25px;
     color: #0065FC;
 }
 
@@ -99,6 +98,9 @@ body {
 
     /*HEAD*/
 
+    .header{
+        width: 100%;
+    }
     .header a {
         text-decoration: none;
     }
@@ -385,26 +387,31 @@ h2 {
 
 /*SECTION N°4*/
 
-/* .housing{
+.housing{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 900px;
-    border: solid;
+    margin-left: 45px;
+    border-radius: 25px;
+    padding-left: 25px;
+    background-color: #F2F2F2;
 }
 .housingTitle{
-    width: 100%;
+    width: 90%;
+    margin: auto;
+    font-family: 'Raleway-Extrabold';
 }
 .housing .cards {
-    width: 30%;
+    over
+    /* width: 30%; */
     height: 200px;
     border: solid white 5px;
     border-radius: 20px;
     text-decoration: none;
     background-color: white;
     transition: 0.3s;
-    box-shadow: 1px 0px 10px 0px grey;
-    
+    box-shadow: -5px 5px 5px 1px #dfdfdf;
 }
 
 .housing .imgFlex {
@@ -418,9 +425,20 @@ h2 {
     width: 15px;
     margin-top: 28px;
     margin-left: 15px;
-} */
+}
 
+@media screen and (max-width: 600px) {/*SECTION N°4*/
+    .housing{
+        width: 100%;
+        margin: auto;
+        border-radius: 0;
+    }
 
+    .housing .cards{
+        width: 85%;
+        margin: auto;
+    }
+}
 
 
 
