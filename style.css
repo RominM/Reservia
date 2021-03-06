@@ -90,70 +90,6 @@ body {
     grid-column: 4;
 }
 
-@media screen and (max-width: 600px) {
-
-    body {
-        max-width: 100%;
-    }
-
-    /*HEAD*/
-
-    .header{
-        width: 100%;
-        /* margin: auto; */
-        margin-right: 0;
-    }
-    .header a {
-        text-decoration: none;
-    }
-
-    .headLogo {
-        order: 1;
-        margin-top: 0;
-        margin-left: 25px;
-        padding-top: 10px;
-        padding-left: 0;
-    }
-
-    .headSignup {
-        order: 2;
-    }
-
-    .headNav {
-        order: 3;
-        grid-column: 1/5;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-        width: 100%;
-        margin: 0;
-        font-size: 1em;
-    }
-
-    .headNavLink1 {
-        padding-top: 15px;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 17px;
-        color: #0065FC;
-        border-top: none;
-        border-bottom: solid 4px;
-        width: 50%;
-    }
-
-    .header .headNavLink2 {
-        padding-top: 15px;
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 15px;
-        color: #000;
-        border-bottom: solid 4px #F2F2F2;
-        width: 50%;
-        margin: 0;
-    }
-}
-
 /*SECTION N°1*/
 
 .title {
@@ -171,20 +107,6 @@ h2 {
     margin-top: 7px;
     font-family: 'Raleway-Light';
     font-size: 1em;
-}
-
-@media screen and (max-width: 600px) {
-    /*SECTION N°1*/
-
-    .title {
-        width: 85%;
-        margin: auto;
-    }
-
-    .title h2{
-        margin-top: 15px;
-        margin-bottom: 30px;
-    }
 }
 
 /*FORMULAIRE*/
@@ -242,7 +164,7 @@ h2 {
     outline: 0;
 }
 
-#search button:hover{
+#search button:hover {
     background-color: #dfdfdf;
     color: #0065FC;
 }
@@ -254,7 +176,7 @@ h2 {
     transition: 0.25s;
 }
 
-#search button:hover p{
+#search button:hover p {
     transform: scale(1.2);
 }
 
@@ -263,33 +185,9 @@ h2 {
     opacity: 0;
 }
 
-@media screen and (max-width: 600px) {/*FORMULAIRE*/
-
-    #search {
-        width: 87%;
-        margin: auto;
-    }
-
-    #search p {
-        opacity: 0;
-    }
-
-    #search button {
-        width: 55px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
-
-    #search button img {
-        border: solid #000;
-        width: 20px;
-        opacity: 1;
-    }
-}
-
 /*SECTION N°2*/
 
-.filter{
+.filter {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -317,7 +215,7 @@ h2 {
     margin-top: 16px;
 }
 
-.filter .choice .img{
+.filter .choice .img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -327,7 +225,8 @@ h2 {
     transition: 0.3s;
 }
 
-.filter .choice p, .filter p {
+.filter .choice p,
+.filter p {
     font-family: 'Raleway-bold';
     font-size: 1em;
     text-align: center;
@@ -335,7 +234,7 @@ h2 {
     margin-left: 12px;
 }
 
-.choice:hover .img{
+.choice:hover .img {
     transform: scale(1.07);
 }
 
@@ -343,24 +242,9 @@ h2 {
     box-shadow: inset -5px 5px 5px 1px #dfdfdf;
 }
 
-@media screen and (max-width: 600px) {/*SECTION N°2*/
-    
-    .filter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 25px;
-        margin-top: 25px;
-    }
-
-    .filter .choice {
-        margin-bottom: 15px;
-    }
-}
-
 /*SECTION N°3*/
 
-.info{
+.info {
     display: flex;
     align-items: center;
     margin-left: 43px;
@@ -375,22 +259,15 @@ h2 {
     margin-right: 5px;
 }
 
-.info h4{
+.info h4 {
     font-family: 'Raleway-light';
     font-size: 0.8em;
     margin-left: 5px;
 }
 
-@media screen and (max-width: 600px) {/*SECTION N°3*/
-    .info{
-        width: 80%;
-        margin: auto;
-    }
-}
-
 /*SECTION N°4*/
 
-.housing{
+.housing {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -400,11 +277,13 @@ h2 {
     padding-left: 25px;
     background-color: #F2F2F2;
 }
-.housingTitle{
+
+.housingTitle {
     width: 90%;
     margin: auto;
     font-family: 'Raleway-Extrabold';
 }
+
 .housing .cards {
     /* width: 30%; */
     height: 200px;
@@ -429,19 +308,137 @@ h2 {
     margin-left: 15px;
 }
 
-@media screen and (max-width: 600px) {/*SECTION N°4*/
-    .housing{
+@media screen and (max-width: 600px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    /*HEAD*/
+
+    .header {
+        width: 100%;
+        /* margin: auto; */
+        margin-right: 0;
+    }
+
+    .header a {
+        text-decoration: none;
+    }
+
+    .headLogo {
+        order: 1;
+        margin-top: 0;
+        margin-left: 25px;
+        padding-top: 10px;
+        padding-left: 0;
+    }
+
+    .headSignup {
+        order: 2;
+    }
+
+    .headNav {
+        order: 3;
+        grid-column: 1/5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        font-size: 1em;
+    }
+
+    .headNavLink1 {
+        padding-top: 15px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 17px;
+        color: #0065FC;
+        border-top: none;
+        border-bottom: solid 4px;
+        width: 50%;
+    }
+
+    .header .headNavLink2 {
+        padding-top: 15px;
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 15px;
+        color: #000;
+        border-bottom: solid 4px #F2F2F2;
+        width: 50%;
+        margin: 0;
+    }
+
+    /*SECTION N°1*/
+
+    .title {
+        width: 85%;
+        margin: auto;
+    }
+
+    .title h2 {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    /*FORMULAIRE*/
+
+    #search {
+        width: 87%;
+        margin: auto;
+    }
+
+    #search p {
+        opacity: 0;
+    }
+
+    #search button {
+        width: 55px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    #search button img {
+        border: solid #000;
+        width: 20px;
+        opacity: 1;
+    }
+
+    /*SECTION N°2*/
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    .filter .choice {
+        margin-bottom: 15px;
+    }
+
+    /*SECTION N°3*/
+    .info {
+        width: 80%;
+        margin: auto;
+    }
+
+    /*SECTION N°4*/
+    .housing {
         width: 100%;
         margin: auto;
         border-radius: 0;
     }
 
-    .housing .cards{
+    .housing .cards {
         width: 85%;
         margin: auto;
     }
 }
-
 
 
 
