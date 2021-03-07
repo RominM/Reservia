@@ -310,7 +310,9 @@ h2 {
 @media screen and (max-width: 600px) {
 
     body {
-        max-width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     }
 
     /*HEAD*/
@@ -421,12 +423,14 @@ h2 {
     }
 
     /*SECTION N°3*/
+
     .info {
         width: 80%;
         margin: auto;
     }
 
     /*SECTION N°4*/
+
     .housing {
         /* width: 100%; */
         /* margin: auto; */
