@@ -225,7 +225,6 @@ h2 {
     transition: 0.3s;
 }
 
-.filter .choice p,
 .filter p {
     font-family: 'Raleway-bold';
     font-size: 1em;
@@ -285,8 +284,8 @@ h2 {
 }
 
 .housing .cards {
-    /* width: 30%; */
-    height: 200px;
+    width: 30%;
+    /* height: 200px; */
     border: solid white 5px;
     border-radius: 20px;
     text-decoration: none;
@@ -429,14 +428,14 @@ h2 {
 
     /*SECTION N°4*/
     .housing {
-        width: 100%;
-        margin: auto;
-        border-radius: 0;
+        /* width: 100%; */
+        /* margin: auto; */
+        /* border-radius: 0; */
     }
 
     .housing .cards {
-        width: 85%;
-        margin: auto;
+        /* width: 85%; */
+        /* margin: auto; */
     }
 }
 
