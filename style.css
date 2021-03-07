@@ -17,17 +17,6 @@
     font-family: 'Raleway-Light';
     src: url(fonts/Raleway-Light.ttf) format('truetype');
 }
-html{
-    border: solid 5px red;
-    width: 100%;
-    margin: auto;
-}
-body {
-    margin: auto;
-    padding: 0;
-    width: 100%;
-    border: solid 10px greenyellow;
-}
 
 /*HEAD*/
 
