@@ -17,11 +17,16 @@
     font-family: 'Raleway-Light';
     src: url(fonts/Raleway-Light.ttf) format('truetype');
 }
-
+html{
+    border: solid 5px red;
+    width: 100%;
+    margin: auto;
+}
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     width: 100%;
+    border: solid 10px greenyellow;
 }
 
 /*HEAD*/
@@ -277,15 +282,15 @@ h2 {
     background-color: #F2F2F2;
 }
 
-.housingTitle {
+/* .housingTitle {
     width: 90%;
     margin: auto;
     font-family: 'Raleway-Extrabold';
-}
+} */
 
 .housing .cards {
     width: 30%;
-    /* height: 200px; */
+    height: 200px;
     border: solid white 5px;
     border-radius: 20px;
     text-decoration: none;
@@ -309,19 +314,19 @@ h2 {
 
 @media screen and (max-width: 600px) {
 
-    body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    }
+    /* body {
+        margin: auto;
+        padding: 0;
+        width: 100%;
+    } */
 
     /*HEAD*/
 
-    .header {
+    /* .header {
         width: 100%;
         /* margin: auto; */
-        margin-right: 0;
-    }
+        /* margin-right: 0;
+    } */ 
 
     .header a {
         text-decoration: none;
@@ -431,15 +436,18 @@ h2 {
 
     /*SECTION N°4*/
 
+    .star{
+        width: 15px;
+        display: flex;
+    }
     .housing {
-        /* width: 100%; */
-        /* margin: auto; */
-        /* border-radius: 0; */
+        border: solid;
+        /* width: 87%; */
+        margin: auto;
     }
 
-    .housing .cards {
-        /* width: 85%; */
-        /* margin: auto; */
+    .housing .cards img {
+        width: 100%;
     }
 }
 
