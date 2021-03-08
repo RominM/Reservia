@@ -318,8 +318,7 @@
 
     .headSignup {
         order: 2;
-        border: solid;
-        
+        margin-top: -15px;
         }
 
     .headNav {
@@ -386,7 +385,7 @@
     }
 
     #search button img {
-        margin-top: -10px;
+        margin-top: -6px;
         margin-left: 5px;
         width: 20px;
         opacity: 1;
@@ -402,8 +401,16 @@
         margin-top: 25px;
     }
 
+    .filter p {
+        padding-bottom: 15px;
+    }
+
     .filter .choice {
         margin-bottom: 15px;
+    }
+
+    .filter .choice p{
+        padding-top: 15px; /*pourquoi le text-align: center; ne fonctionne pas ?*/
     }
 
     /*SECTION N°3*/
