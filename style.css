@@ -268,23 +268,23 @@
 
 /*MAIN*/
 
-.main {
+/* .main {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
     height: 650px;
-}
+} */
 
-.star {
+/* .star {
     display: flex;
     width: 15px;
     margin-top: 28px;
     margin-left: 15px;
-}
+} */
 
 /*SECTION N°4*/
 
-/* .housing {
+.housing {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -317,7 +317,7 @@
     width: 100%;
     height: 140px;
     object-fit: cover;
-} */
+}
 
 /*ASIDE*/
 
@@ -555,21 +555,21 @@
     .main {
         display: flex;
         flex-direction: column-reverse;
-        border: solid;
-        width: 100%;
-        height: auto;
+        /* border: solid; */
+        /* height: auto; */
     }
 
-    .star {
+    /* .star {
         width: 15px;
         display: flex;
-    }
+    } */
 
     /*ASIDE*/
 
     .pop {
-        width: 93%;
+        width: 91%;
         margin: auto;
+        border: solid 5px red;
         border-radius: 0;
     }
 
@@ -578,19 +578,26 @@
         margin: auto;
     }
 
-
+    /*(WIDTH DIFFERENT POUR MEME RENDU ???)*/
+    
     /*SECTION N°4*/
 
     .housing {
-        width: 100%;
+        width: 98%;
         margin: auto;
-        display: flex;
-        flex-direction: column;
-        border-radius: none;
+        /* display: flex; */
+        /* flex-direction: column; */
+        border: solid 5px greenyellow;
+        border-radius: 0;
         background-color: #fff;
     }
 
-    .housing .cards {
+    .housing .housingTitle {
+        width: 80%;
+        margin: auto;
+    }
+
+    /* .housing .cards {
         width: 90%;
         height: 210px;
         margin: auto;
@@ -606,6 +613,10 @@
         margin: auto;
         object-fit: cover;
     }
+
+    .housing .cards h6 {
+        
+    } */
 }
 
 
