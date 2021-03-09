@@ -105,7 +105,7 @@
 
 /*FORMULAIRE*/
 
-#search {
+.search_form {
     display: flex;
     align-items: center;
     max-width: 450px;
@@ -114,7 +114,7 @@
     margin-left: 45px;
 }
 
-#search .marker {
+.search_form .marker {
     width: 55px;
     height: 50px;
     background-color: #F2F2F2;
@@ -130,7 +130,7 @@
     margin-top: 15px;
 }
 
-#search .place input {
+.search_form .place input {
     position: relative;
     font-family: 'Raleway-Medium';
     font-size: 1.15em;
@@ -142,7 +142,7 @@
     outline: 0;
 }
 
-#search button {
+.search_form button {
     position: absolute;
     border: none;
     color: #fff;
@@ -158,12 +158,12 @@
     outline: 0;
 }
 
-#search button:hover {
+.search_form button:hover {
     background-color: #dfdfdf;
     color: #0065FC;
 }
 
-#search p {
+.search_form p {
     font-family: 'Raleway-bold';
     font-size: 1.1em;
     padding: 0;
@@ -171,11 +171,11 @@
     transition: 0.25s;
 }
 
-#search button:hover p {
+.search_form button:hover p {
     transform: scale(1.2);
 }
 
-#search button img {
+.search_form button img {
     width: 25px;
     opacity: 0;
 }
