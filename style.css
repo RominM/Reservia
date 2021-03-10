@@ -345,13 +345,16 @@
 }
 
 .cards .star{
-    margin-top: 9px;
+    margin-top: 17px;
     margin-left: 0;
 }
 
 .main .more .viewMore {
+    width: 100%;
+    margin-left: 50px;
     font-family: 'Raleway-ExtraBold';
     color: #000;
+    margin-left: 15px;
 }
 
 /*ASIDE*/
@@ -361,25 +364,23 @@
     flex-direction: column;
     justify-content: space-between;
     width: 30%;
-    height: 600px;
+    height: 580px;
     margin-right: 60px;
     margin-left: 30px;
     border-radius: 25px;
-    /* background-color: #F2F2F2;
-    margin-bottom: 30px; */
+    padding-bottom: 25px;
 }
 
 .pop .popTitle {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 40px;
+    padding-top: 30px;
     font-family: 'Raleway-ExtraBold';
     font-size: 1.2em;
-    /* padding-bottom: 15px; */
 }
 
 .pop .popTitle img {
@@ -425,20 +426,6 @@
     margin-top: 25px;
 }
 
-.element a, .cards a {
-    box-shadow: ;
-    background-color: #fff;
-    border: solid 5px #fff;
-    border-radius: 25px;
-}
-
-
-
-
-
-
-
-
 /*STRUCT CSS - DRY*/
 
 .headNav, .headNavLink1, .search_form .place input {
@@ -456,9 +443,16 @@
 }
 
 .cards, .element a {
+    transition: 0.3s;
+    border-radius: 25px;
+    border: solid  5px #fff;
     box-shadow: 2px 2px 2px rgba(66, 66, 66, 0.5);
-
 }
+
+.cards:hover, .element a:hover {
+    box-shadow: -2px -2px 5px rgba(66, 66, 66, 0.5);
+}
+
 
 
 
