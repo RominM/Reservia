@@ -18,6 +18,9 @@
     src: url(fonts/Raleway-Light.ttf) format('truetype');
 }
 
+
+/*VERSION DESKTOP*/
+
 /*HEAD*/
 
 .header {
@@ -266,10 +269,9 @@
 /*MAIN*/
 
 .main {
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
     margin-top: 25px;
-    height: 650px; */
 }
 
 .star {
@@ -286,50 +288,69 @@
     justify-content: space-around;
     flex-wrap: wrap;
     width: 70%;
-    margin-top: 30px;
+    height: 600px;
+    margin-bottom: 50px;
     margin-left: 45px;
     margin-right: 30px;
     border-radius: 25px;
-    
 }
 
 .housingTitle {
     width: 90%;
     margin: auto;
+    padding-top: 40px;
+    padding-bottom: 10px;
     font-family: 'Raleway-ExtraBold';
     font-size: 1.2em;
 }
 
 .cards {
     background-color: #fff;
-    border: solid 5px #fff;
+    border: solid 5px #000;
     border-radius: 25px;
-    
-    
+    width: 260px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
 }
-.cards a .imgFlex{
-    width: 275px;
-    height: 150px;
+
+.cards a {
+    /* text-decoration: none;
+    width: 75%;
+    height: 100px;
+    margin: auto; */
+    display: flex;
+    width: 83%;
+    height: 110px;
+    margin: auto;
+    text-decoration: none;
+    color: #000;
+}
+
+.housing .cards .imgFlex{
+    width: 100%;
+
+    /* width: 100%;
+    height: 130px;
+    margin-top: 0;
+    padding-top: 0;
     object-fit: cover;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 20px; */
 }
 
-.
-.txt p {
+.housing .txt {
     text-decoration: none;
-
 }
+
 .txt h6 {
     font-family: 'Raleway-ExtraBold';
     color: #000;
-    
 }
 
-.cards .txt p{
+.txt p{
     font-family: 'Raleway-Light';
     color: #000;
-    
 }
 
 .main .more .viewMore {
@@ -344,7 +365,8 @@
     flex-direction: column;
     justify-content: space-between;
     width: 30%;
-    margin-right: 75px;
+    height: 600px;
+    margin-right: 60px;
     margin-left: 30px;
     border-radius: 25px;
     /* background-color: #F2F2F2;
@@ -354,97 +376,70 @@
 .pop .popTitle {
     display: flex;
     justify-content: space-between;
-    width: 85%;
+    width: 90%;
     margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 40px;
     font-family: 'Raleway-ExtraBold';
     font-size: 1.2em;
+    /* padding-bottom: 15px; */
 }
 
 .pop .popTitle img {
     width: 25px;
 }
 
-
-
-/* .main .pop {
-    
-} */
-
-/* .main .pop .pop_title {
+.element a {
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    margin-left: 30px;
-} */
-
-/* .main .pop .pop_title h3 {
-    font-family: 'Raleway-bold';
-    font-size: 1.4em;
-} */
-
-/* .main .pop .pop_title img {
-    width: 22px;
-    margin-right: 40px;
-} */
-
-/* .main .pop .element a {
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    width: 330px;
-    height: 135px;
-    border: solid white 5px;
-    border-radius: 20px;
+    width: 83%;
+    height: 110px;
+    margin: auto;
     text-decoration: none;
-    align-items: center;
-    margin-left: 33px;
-    margin-top: 10px;
-    margin-bottom: 45px;
-    background-color: white;
-    transition: 0.3s;
-    box-shadow: 1px 0px 10px 0px grey;
-} */
+    color: #000;
+}
 
-/* .main .pop .element a .pic img {
-    width: 75%;
-    object-fit: cover;
-} */
-
-/* .main .pop .element a .link {
-    position: absolute;
+.element .pic img {
+    width: 80%;
     height: 100%;
-    width: 175px;
-    margin-left: 115px;
-    padding-top: 15px;
-    background-color: white;
-} */
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
 
-/* .main .pop .element a .link h6 {
-    font-family: 'Raleway-black';
-    font-size: 1.1em;
-    color: black;
-    margin-left: 15px;
-    padding-top: 0;
+.link {
+    width: 170%;
     margin-top: 10px;
-    margin-bottom: 0;
-} */
+    margin-left: 0;
+}
 
-/* .main .pop .element a .link p {
-    font-size: 1em;
-    font-family: 'Raleway-Light';
-    color: black;
-    margin: 10px;
-    margin-left: 15px;
-    margin-bottom: 15px;
-} */
+.link h6, .cards h6 {
+    font-family: 'Raleway-bold';
+    font: 1em;
+}
 
-/* .element .star {
-    margin-left: 15px;
-} */
+.link p, .cards p {
+    font-family: 'Raleway-Medium';
+    font-size: 0.85em;
+    margin-top: 10px;
+}
 
-/* .main .element a:hover {
-    box-shadow: #a9a9a9 0px 2px 18px 2px;
-} */
+.link .star {
+    margin-left: 0;
+    margin-top: 25px;
+}
+
+.element a, .cards a {
+    box-shadow: ;
+    background-color: #fff;
+    border: solid 5px #fff;
+    border-radius: 25px;
+}
+
+
+
+
+
 
 
 
@@ -464,6 +459,13 @@
     background-color: #F2F2F2;
 }
 
+
+
+
+
+
+
+/*VERSION MOBILE*/
 
 @media screen and (max-width: 600px) {
 
@@ -575,7 +577,6 @@
 
     .filter .choice p {
         padding-top: 15px;
-        /*pourquoi le text-align: center; ne fonctionne pas ?*/
     }
 
     /*SECTION N°3*/
@@ -588,10 +589,9 @@
     /*MAIN*/
 
     .main {
-        display: flex;
         flex-direction: column-reverse;
         width: 100%;
-        margin-top: 30px;
+        height: auto;
     }
 
     /*ASIDE*/
@@ -599,108 +599,51 @@
     .pop {
         width: 100%;
         margin: auto;
+        height: auto;
         border-radius: 0;
-        padding-top: 35px;
-        padding-bottom: 25px;
+        padding-top: 0;
+        padding-bottom: 15px;
     }
 
     .pop .popTitle {
-        width: 85%;
         margin: auto;
         padding-bottom: 15px;
     }
 
     .element a {
-        display: flex;
-        width: 87%;
-        height: 110px;
-        margin: auto;
         margin-bottom: 13px;
-        text-decoration: none;
-        color: #000;
-    }
-    
-    
-    .element .pic img {
-        width: 80%;
-        height: 100%;
-        object-fit: cover;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
-    
-    .link {
-        width: 170%;
-        margin-top: 10px;
-        margin-left: 0;
-    }
-    
-    .link h6, .cards h6 {
-        font-family: 'Raleway-bold';
-        font: 1em;
-    }
-    
-    .link p, .cards p {
-        font-family: 'Raleway-Medium';
-        font-size: 0.85em;
-        margin-top: 10px;
-    }
-    
-    .link .star {
-        margin-left: 0;
-        margin-top: 25px;
     }
     
     /*SECTION N°4*/
 
     .housing {
         width: 97%;
+        height: auto;
         margin: auto;
         margin-bottom: 15px;
+        margin-top: 30px;
         padding-top: 15px;
         display: flex;
         flex-direction: column;
         border-radius: 0;
         background-color: #fff;
+        border: solid;
     }
 
-    .housing .housingTitle {
-        width: 80%;
-        margin: auto;
-        padding-top: 15px;
+    .housing .housingTitle{
+        margin: 0;
+        padding: 0;
     }
-
     .cards {
         width: 90%;
         height: 250px;
-        margin: auto;
-        overflow: hidden;
-        border-radius: 25px;
         margin: 10px;
-    }
-
-    .housing .cards .imgFlex{
-        width: 100%;
-        height: 130px;
-        margin: auto;
-        object-fit: cover;
     }
 
     .main .more .viewMore {
         width: 100%;
         margin: auto;    
         margin-left: 15px
-    }
-
-    .housing .cards h6 {
-        
-    }
-
-    .element a, .cards a {
-        box-shadow: ;
-        background-color: #fff;
-        border: solid 5px #fff;
-        border-radius: 25px;
     }
     
 }
