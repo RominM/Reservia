@@ -28,67 +28,68 @@
         <a class="headSignup" href="#">S'inscrire</a>
     </header>
 
-        <!-- SECTION N°1 -->
-        <section class="title">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h2>En plein centre ville ou en pleine nature</h2>
-        </section>
+    <!-- SECTION N°1 -->
+    <section class="title">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h2>En plein centre ville ou en pleine nature</h2>
+    </section>
 
-        <!-- FORMULAIRE (recherche) -->
-        <form method="post" action="#" class="search_form">
-            <label for="search" class="marker">
-                <img src="img/logo/map-marker-alt-solid.svg" alt="marker">
-            </label>
-            <div class="place">
-                <input type="text" name="search" id="search" value="Marseille, France">
+    <!-- FORMULAIRE (recherche) -->
+    <form method="post" action="#" class="search_form">
+        <label for="search" class="marker">
+            <img src="img/logo/map-marker-alt-solid.svg" alt="marker">
+        </label>
+        <div class="place">
+            <input type="text" name="search" id="search" value="Marseille, France">
+        </div>
+        <button type="submit">
+            <!--si je change le "button" en input avec un class, un padding se crée-->
+            <p>Rechercher</p>
+            <img src="img/logo/search-solid.svg" class="searchLogo">
+        </button>
+    </form>
+
+    <!-- SECTION N°2 -->
+    <section class="filter">
+        <p>Filtres</p>
+
+        <a href="#" class="choice">
+            <div class="img">
+                <img src="img/logo/money-bill-wave-solid.svg" alt="Choix Economique">
             </div>
-            <button type="submit"> <!--si je change le "button" en input avec un class, un padding se crée-->
-                <p>Rechercher</p>
-                <img src="img/logo/search-solid.svg" class="searchLogo">
-            </button>
-        </form>
+            <p>Économique</p>
+        </a>
 
-        <!-- SECTION N°2 -->
-        <section class="filter">
-            <p>Filtres</p>
+        <a href="#" class="choice">
+            <div class="img">
+                <img src="img/logo/child-solid.svg" alt="Choix Familial">
+            </div>
+            <p>Familial</p>
+        </a>
 
-            <a href="#" class="choice">
-                <div class="img">
-                    <img src="img/logo/money-bill-wave-solid.svg" alt="Choix Economique">
-                </div>
-                <p>Économique</p>
-            </a>
+        <a href="#" class="choice">
+            <div class="img">
+                <img src="img/logo/heart-solid.svg" alt="Choix Romantique">
+            </div>
+            <p>Romantique</p>
+        </a>
 
-            <a href="#" class="choice">
-                <div class="img">
-                    <img src="img/logo/child-solid.svg" alt="Choix Familial">
-                </div>
-                <p>Familial</p>
-            </a>
+        <a href="#" class="choice">
+            <div class="img">
+                <img src="img/logo/dog-solid.svg" alt="Choix Animaux">
+            </div>
+            <p>Animaux autorisés</p>
+        </a>
 
-            <a href="#" class="choice">
-                <div class="img">
-                    <img src="img/logo/heart-solid.svg" alt="Choix Romantique">
-                </div>
-                <p>Romantique</p>
-            </a>
+    </section>
 
-            <a href="#" class="choice">
-                <div class="img">
-                    <img src="img/logo/dog-solid.svg" alt="Choix Animaux">
-                </div>
-                <p>Animaux autorisés</p>
-            </a>
+    <!-- SECTION N°3 -->
+    <section class="info">
+        <p><img src="img/logo/info-solid.svg" alt="information"></p>
+        <h4>Plus de 500 logements sont disponibles dans cette ville</h4>
+    </section>
 
-        </section>
-
-        <!-- SECTION N°3 -->
-        <section class="info">
-            <p><img src="img/logo/info-solid.svg" alt="information"></p>
-            <h4>Plus de 500 logements sont disponibles dans cette ville</h4>
-        </section>
-
-        <!-- MAIN -->
+    <!-- MAIN -->
     <main class="main">
 
         <!-- SECTION N°4 -->
@@ -97,105 +98,123 @@
                 <h3>Hébergements à Marseille</h3>
             </div>
 
-            <a href="#" class="cards">
-                <p><img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"
-                        class="imgFlex"></p>
-                <div class="txt">
-                    <h6>Auberge la Cannebière</h6>
-                    <p>Nuit à partir de <strong>25€</strong></p>
-                    <div class="star">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_grey.svg" alt="grey">
+            <!-- CARD N°1 -->
+            <div class="cards">
+                <a href="#">
+                    <p><img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                            alt="Auberge la Cannebière" class="imgFlex"></p>
+                    <div class="txt">
+                        <h6>Auberge la Cannebière</h6>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <div class="star">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_grey.svg" alt="grey">
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
 
-            <a href="#" class="cards">
-                <p><img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photohotel5"
-                        class="imgFlex"></p>
-                <div class="txt">
-                    <h6>Hôtel du port</h6>
-                    <p>Nuit à partir de <strong>52€</strong></p>
-                    <div class="star">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
+            <!-- CARD N°2 -->
+            <div class="cards">
+                <a href="#">
+                    <p><img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photohotel5"
+                            class="imgFlex"></p>
+                    <div class="txt">
+                        <h6>Hôtel du port</h6>
+                        <p>Nuit à partir de <strong>52€</strong></p>
+                        <div class="star">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                        </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
 
-            <!-- <a href="#" class="cards">
-                <p> <img src="img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photohotel6"
-                        class="imgFlex"></p>
-                <div class="txt">
-                    <h6>Hôtel Les mouettes</h6>
-                    <p>Nuit à partir de <strong>76€</strong></p>
-                    <div class="star">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_grey.svg" alt="grey">
+            <!-- CARD N°3 -->
+            <div class="cards">
+                <a href="#">
+                    <p> <img src="img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photohotel6"
+                            class="imgFlex"></p>
+                    <div class="txt">
+                        <h6>Hôtel Les mouettes</h6>
+                        <p>Nuit à partir de <strong>76€</strong></p>
+                        <div class="star">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_grey.svg" alt="grey">
+                        </div>
                     </div>
-                </div>
-            </a> -->
+                </a>
+            </div>
 
-            <!-- <a href="#" class="cards">
-                <p><img src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photohotel7"
-                        class="imgFlex"></p>
-                <div class="txt">
-                    <h6>Hôtel de la mer</h6>
-                    <p>Nuit à partir de <strong>46€</strong></p>
-                    <div class="star">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_grey.svg" alt="grey">
-                        <img src="img/logo/star-solid_grey.svg" alt="grey">
+            <!-- CARD N°4 -->
+            <div class="cards">
+                <a href="#">
+                    <p><img src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photohotel7"
+                            class="imgFlex"></p>
+                    <div class="txt">
+                        <h6>Hôtel de la mer</h6>
+                        <p>Nuit à partir de <strong>46€</strong></p>
+                        <div class="star">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_grey.svg" alt="grey">
+                            <img src="img/logo/star-solid_grey.svg" alt="grey">
+                        </div>
                     </div>
-                </div>
-            </a> -->
+                </a>
+            </div>
 
-            <!-- <a href="#" class="cards">
-                <p><img src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photohotel8"
-                        class="imgFlex"></p>
-                <div class="txt">
-                    <h6>Auberge Le Panier</h6>
-                    <p>Nuit à partir de <strong>23€</strong></p>
-                    <div class="star">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_grey.svg" alt="grey">
+            <!-- CARD N°5 -->
+            <div class="cards">
+                <a href="#">
+                    <p><img src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photohotel8"
+                            class="imgFlex"></p>
+                    <div class="txt">
+                        <h6>Auberge Le Panier</h6>
+                        <p>Nuit à partir de <strong>23€</strong></p>
+                        <div class="star">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_grey.svg" alt="grey">
+                        </div>
                     </div>
-                </div>
-            </a> -->
+                </a>
+            </div>
 
-            <!-- <a href="#" class="cards">
-                <p><img src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photohotel9"
-                        class="imgFlex"></p>
-                <div class="txt">
-                    <h6>Hôtel chez Amina</h6>
-                    <p>Nuit à partir de <strong>96€</strong></p>
-                    <div class="star">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
-                        <img src="img/logo/star-solid_blue.svg" alt="blue">
+            <!-- CARD N°6 -->
+            <div class="cards">
+                <a href="#">
+                    <p><img src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="photohotel9"
+                            class="imgFlex"></p>
+                    <div class="txt">
+                        <h6>Hôtel chez Amina</h6>
+                        <p>Nuit à partir de <strong>96€</strong></p>
+                        <div class="star">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                            <img src="img/logo/star-solid_blue.svg" alt="blue">
+                        </div>
                     </div>
-                </div>
-            </a> -->
+                </a>
+            </div>
 
-            <!-- <div class="more">
-                <a href="#">Afficher plus</a>
-            </div> -->
+            <div class="more">
+                <a href="#" class="viewMore">Afficher plus</a>
+            </div>
 
         </section>
 
@@ -206,11 +225,12 @@
                 <img src="img/logo/chart-line-solid.svg" alt="logopop">
             </div>
 
+            <!-- ELEMENT N°1 -->
             <div class="element">
                 <a href="">
                     <div class="pic">
-                        <img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                            alt="photohotel1" class="imgFlex">
+                        <img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photohotel1"
+                            class="imgFlex">
                     </div>
                     <div class="link">
                         <h6>Hôtel Le soleil du matin</h6>
@@ -226,6 +246,7 @@
                 </a>
             </div>
 
+            <!-- ELEMENT N°2 -->
             <div class="element">
                 <a href="">
                     <div class="pic">
@@ -246,11 +267,12 @@
                 </a>
             </div>
 
+            <!-- ELEMENT N°3 -->
             <div class="element">
                 <a href="">
                     <div class="pic">
-                        <img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                            alt="photohotel3" class="imgFlex">
+                        <img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photohotel3"
+                            class="imgFlex">
                     </div>
                     <div class="link">
                         <h6>Hôtel Tout bleu et Blanc</h6>
@@ -265,7 +287,7 @@
                     </div>
                 </a>
             </div>
-            
+
         </aside>
 
     </main>
