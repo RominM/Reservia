@@ -306,51 +306,47 @@
 
 .cards {
     background-color: #fff;
-    border: solid 5px #000;
+    border: solid 5px #fff;
     border-radius: 25px;
-    width: 260px;
-    height: 200px;
-    margin: 20px;
+    width: 240px;
+    height: 190px;
     overflow: hidden;
 }
 
 .cards a {
-    /* text-decoration: none;
-    width: 75%;
-    height: 100px;
-    margin: auto; */
-    display: flex;
-    width: 83%;
-    height: 110px;
-    margin: auto;
     text-decoration: none;
-    color: #000;
 }
 
 .housing .cards .imgFlex{
     width: 100%;
-
-    /* width: 100%;
-    height: 130px;
-    margin-top: 0;
-    padding-top: 0;
+    height: 150px;
+    margin-top: -50px;
     object-fit: cover;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px; */
+    border-top-right-radius: 20px;
 }
 
-.housing .txt {
-    text-decoration: none;
+.cards .txt {
+    line-height: 0.6em;
+    margin-left: 10px;
 }
 
 .txt h6 {
     font-family: 'Raleway-ExtraBold';
-    color: #000;
+    margin-top: 10px;
 }
 
 .txt p{
     font-family: 'Raleway-Light';
+}
+
+.txt h6, .txt p {
     color: #000;
+}
+
+.cards .star{
+    margin-top: 9px;
+    margin-left: 0;
 }
 
 .main .more .viewMore {
@@ -457,6 +453,11 @@
 
 .search_form .marker, .housing, .pop {
     background-color: #F2F2F2;
+}
+
+.cards, .element a {
+    box-shadow: 2px 2px 2px rgba(66, 66, 66, 0.5);
+
 }
 
 
@@ -617,7 +618,7 @@
     /*SECTION N°4*/
 
     .housing {
-        width: 97%;
+        width: 100%;
         height: auto;
         margin: auto;
         margin-bottom: 15px;
@@ -627,7 +628,6 @@
         flex-direction: column;
         border-radius: 0;
         background-color: #fff;
-        border: solid;
     }
 
     .housing .housingTitle{
@@ -636,7 +636,7 @@
     }
     .cards {
         width: 90%;
-        height: 250px;
+        height: 195px;
         margin: 10px;
     }
 
