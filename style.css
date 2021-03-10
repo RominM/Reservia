@@ -180,6 +180,29 @@
     opacity: 0;
 }
 
+
+.marker:hover img {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+
 /*SECTION N°2*/
 
 .filter {
@@ -292,24 +315,25 @@
     margin-bottom: 50px;
     margin-left: 45px;
     margin-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-radius: 25px;
 }
 
 .housingTitle {
     width: 90%;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 10px;
     font-family: 'Raleway-ExtraBold';
     font-size: 1.2em;
 }
 
 .cards {
-    background-color: #fff;
     border: solid 5px #fff;
     border-radius: 25px;
     width: 240px;
-    height: 190px;
+    height: 188px;
     overflow: hidden;
 }
 
@@ -351,10 +375,10 @@
 
 .main .more .viewMore {
     width: 100%;
-    margin-left: 50px;
     font-family: 'Raleway-ExtraBold';
     color: #000;
     margin-left: 15px;
+    border: solid;
 }
 
 /*ASIDE*/
@@ -376,7 +400,7 @@
     justify-content: space-around;
     width: 90%;
     margin: auto;
-    margin-top: 0;
+    margin-top: 15px;
     margin-bottom: 0;
     padding-top: 30px;
     font-family: 'Raleway-ExtraBold';
@@ -390,7 +414,7 @@
 .element a {
     display: flex;
     width: 83%;
-    height: 110px;
+    height: 125px;
     margin: auto;
     text-decoration: none;
     color: #000;
@@ -407,7 +431,7 @@
 .link {
     width: 170%;
     margin-top: 10px;
-    margin-left: 0;
+    margin-left: -10px;
 }
 
 .link h6, .cards h6 {
@@ -418,12 +442,12 @@
 .link p, .cards p {
     font-family: 'Raleway-Medium';
     font-size: 0.85em;
-    margin-top: 10px;
+    margin-top: 11px;
 }
 
 .link .star {
     margin-left: 0;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 /*STRUCT CSS - DRY*/
@@ -444,13 +468,14 @@
 
 .cards, .element a {
     transition: 0.3s;
+    background-color: #fff;
     border-radius: 25px;
     border: solid  5px #fff;
-    box-shadow: 2px 2px 2px rgba(66, 66, 66, 0.5);
+    box-shadow: 2px 2px 10px rgba(121, 120, 120, 0.5);
 }
 
 .cards:hover, .element a:hover {
-    box-shadow: -2px -2px 5px rgba(66, 66, 66, 0.5);
+    box-shadow: -2px -2px 10px rgba(121, 120, 120, 0.5);
 }
 
 
@@ -625,7 +650,8 @@
     }
 
     .housing .housingTitle{
-        margin: 0;
+        width: 90%;
+        margin: auto;
         padding: 0;
     }
     .cards {
