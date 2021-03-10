@@ -343,6 +343,8 @@ strong {
     margin-right: 75px;
     margin-left: 30px;
     border-radius: 25px;
+    /* background-color: #F2F2F2;
+    margin-bottom: 30px; */
 }
 
 .pop .popTitle {
@@ -357,12 +359,10 @@ strong {
     width: 25px;
 }
 
+
+
 /* .main .pop {
-    border-radius: 30px;
-    background-color: #F2F2F2;
-    width: 410px;
-    height: 670px;
-    margin-bottom: 30px;
+    
 } */
 
 /* .main .pop .pop_title {
@@ -527,23 +527,23 @@ strong {
 
     /*FORMULAIRE*/
 
-    #search {
+    .search_form {
         width: 87%;
         margin: auto;
     }
 
-    #search p {
+    .search_form p {
         opacity: 0;
     }
 
-    #search button {
+    .search_form button {
         width: 50px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
 
-    #search button img {
-        margin-top: -6px;
+    .search_form .searchLogo {
+        margin-top: -8px;
         margin-left: 5px;
         width: 20px;
         opacity: 1;
@@ -597,17 +597,61 @@ strong {
     /*ASIDE*/
 
     .pop {
-        width: 97%;
+        width: 100%;
         margin: auto;
-        border: solid 5px red;
         border-radius: 0;
-
+        padding-top: 15px;
     }
 
     .pop .popTitle {
-        width: 87%;
+        width: 85%;
         margin: auto;
     }
+
+    .element a {
+        width: 90%;
+        margin: auto;
+        height: 130px;    
+    }
+
+    .element a {
+        display: flex;
+        border: solid 5px #fff;
+        border-radius: 25px;
+        text-decoration: none;
+        color: #000;
+        background-color: #fff;
+    }
+    
+    
+    .element .pic img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    .link {
+        width: 170%;
+        margin-top: 15px;
+    }
+    
+    .link h6 {
+        font-family: 'Raleway-bold';
+        
+    }
+    
+    .link p {
+        font-family: 'Raleway-Medium';
+        margin-top: 10px;
+    }
+    
+    .link .star {
+        margin-left: 0;
+        margin-top: 35px;
+    }
+    
 
     /*(WIDTH DIFFERENT POUR MEME RENDU ???)*/
 
