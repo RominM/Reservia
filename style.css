@@ -226,7 +226,7 @@
     padding-right: 15px;
     margin-right: 10px;
     box-shadow: inset 5px -5px 5px 1px #dfdfdf;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .filter .choice img {
@@ -311,13 +311,18 @@
     justify-content: space-around;
     flex-wrap: wrap;
     width: 70%;
-    height: 600px;
     margin-bottom: 50px;
     margin-left: 45px;
     margin-right: 30px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 25px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .housingTitle {
@@ -374,12 +379,12 @@
 }
 
 .main .more .viewMore {
-    width: 100%;
     font-family: 'Raleway-ExtraBold';
     color: #000;
-    margin-left: 15px;
-    border: solid;
+    text-decoration: none;
+    padding-right: 750px;  /*à revoir*/  
 }
+
 
 /*ASIDE*/
 
@@ -487,7 +492,7 @@
 
 /*VERSION MOBILE*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1350px) {
 
     .header {
         width: 100%;
@@ -709,14 +714,7 @@
 /*BODY DE SECTION*/
 
 /*FOOTER DE SECTION*/
-.housing .more a {
-    /*afficher plus*/
-    font-family: 'Raleway-black';
-    color: black;
-    margin-right: 750px;
-    text-decoration: none;
-}
-
+/* 
 /*HOVER DE SECTION*/
 .main .squar:hover {
     box-shadow: #a9a9a9 0px 2px 18px 2px;
