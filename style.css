@@ -11,7 +11,7 @@
 }
 
 
-/*TEST*/
+/*pas value > placeholder*/ /*creer un dossier CSS*/
 @font-face {
     font-family: 'Raleway-bold';
     src: url(fonts/Raleway-Bold.ttf) format('truetype');
@@ -763,7 +763,7 @@
     /*FORMULAIRE*/
 
     .search_form {
-        width: 87%;
+        width: 85%;
         margin: auto;
     }
 
@@ -772,14 +772,18 @@
     }
 
     .search_form button {
+        position: relative;
         width: 50px;
+        margin: -15px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
 
     .search_form .searchLogo {
-        margin-top: -8px;
-        margin-left: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 20px;
         opacity: 1;
     }
