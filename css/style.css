@@ -25,11 +25,15 @@
     src: url(../fonts/Raleway-Light.ttf) format('truetype');
 }
 
-.link h6,
-.cards h6,
+strong {
+    font-weight: bold;
+}
+
+.link h5,
+.cards h5,
 .header .headSignup,
-.search_form p,
-.filter p {
+.search_form button,
+.filter span {
     font-family: 'Raleway-bold', sans-serif;
     font: 1.1em;
 }
@@ -188,6 +192,7 @@
     background-color: #0065FC;
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
+    padding-bottom: 15px;
     height: 50px;
     width: 125px;
     margin-left: 245px;
@@ -204,15 +209,15 @@
     color: #0065FC;
 }
 
-.search_form p {
+.search_form button {
     padding: 0;
-    margin-top: 15px;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
+    margin-top: 10px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
-.search_form button:hover p {
+.search_form button:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -283,7 +288,7 @@
     border: solid 2px #DEEBFF;
 }
 
-.filter p {
+.filter span {
     font-size: 1em;
     text-align: center;
     color: #000;
@@ -358,7 +363,6 @@
 
 .housing {
     width: 70%;
-    /* min-width: 700px; */
     border-radius: 25px;
     margin-left: 40px;
     padding-bottom: 50px;
@@ -411,7 +415,7 @@
     margin-left: 10px;
 }
 
-.txt h6 {
+.txt h5 {
     font-family: 'Raleway-ExtraBold';
     margin-top: 10px;
 }
@@ -420,7 +424,7 @@
     font-family: 'Raleway-Light';
 }
 
-.txt h6,
+.txt h5,
 .txt p {
     color: #000;
 }
@@ -681,7 +685,7 @@
 
 /*VERSION MOBILE*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .header {
         width: 100%;
@@ -748,7 +752,7 @@
         margin: 0;
     }
 
-    /*SECTION N°1*/
+    /*PART N°1*/
 
     .title {
         width: 90%;
@@ -767,11 +771,11 @@
         margin: auto;
     }
 
-    .search_form p {
+    .search_form button .submit {
         opacity: 0;
     }
 
-    .search_form button {
+    .search_form .submit {
         position: relative;
         width: 50px;
         margin: -15px;
@@ -854,6 +858,7 @@
 
     .element a {
         margin-bottom: 13px;
+        max-width: 550px;
     }
 
     /*SECTION N°4*/

@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia - OpenClassrooms</title>
     <meta name="description"
-        content="Reservia est un exercice proposé par OpenClassrooms. L'objectif de réaliser une page web factice mais fonctionelle pour un site de reservation de vacance . Je vous montre le résultat...">
-    <link rel="stylesheet" href="css/style.css">
+        content="Reservia est un exercice proposé par OpenClassrooms. L'objectif de réaliser une page web factice mais fonctionnelle pour un site de reservation de vacance . Je vous montre le résultat...">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="logo/svg" href="img/logo/paper-plane-solid.svg">
     <script src="https://kit.fontawesome.com/8a96869c24.js" crossorigin="anonymous"></script>
 </head>
@@ -19,7 +19,7 @@
     <!-- HEADER -->
     <header class="header">
         <a href="index.html" title="Reservia">
-            <img class="headLogo" src="img/logo/Reservia.svg" alt="Reservia">
+            <img class="headLogo" src="img/logo/Reservia.svg" alt="Logo Reservia">
         </a>
         <nav class="headNav">
             <a class="headNavLink1" href="#ancreHousing">Hébergements</a>
@@ -29,69 +29,71 @@
     </header>
 
     <!-- SECTION N°1 -->
-    <section class="title">
+    <div class="title">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
-    </section>
+    </div>
 
     <!-- FORMULAIRE -->
-    <form method="post" action="#" class="search_form">
+    <form method="get" action="./" class="search_form">
         <label for="search" class="marker">
             <img src="img/logo/map-marker-alt-solid.svg" alt="marker">
         </label>
         <div class="place">
             <input type="text" name="search" id="search" placeholder="Marseille, France">
         </div>
-        <button type="submit">
-            <p>Rechercher</p>
-            <img src="img/logo/search-solid.svg" class="searchLogo">
-        </button> 
+        <button type="submit" class="submit">
+            Rechercher
+            <img src="img/logo/search-solid.svg" class="searchLogo" alt="logo loupe">
+        </button>
     </form>
 
-    <!-- SECTION N°2 -->
-    <section class="filter">
-        <p>Filtres</p>
+    <!-- PART N°2 -->
+    <div class="filter">
+        <span>Filtres</span>
 
         <a href="#" class="choice">
             <div class="img">
-                <img src="img/logo/money-bill-wave-solid.svg" alt="Choix Economique">
+                <img src="img/logo/money-bill-wave-solid.svg" alt="logo billet">
             </div>
-            <p>Économique</p>
+            <span>Économique</span>
         </a>
 
         <a href="#" class="choice">
             <div class="img">
-                <img src="img/logo/child-solid.svg" alt="Choix Familial">
+                <img src="img/logo/child-solid.svg" alt="logo enfant">
             </div>
-            <p>Familial</p>
+            <span>Familial</span>
         </a>
 
         <a href="#" class="choice">
             <div class="img">
-                <img src="img/logo/heart-solid.svg" alt="Choix Romantique">
+                <img src="img/logo/heart-solid.svg" alt="logo coeur">
             </div>
-            <p>Romantique</p>
+            <span>Romantique</span>
         </a>
 
         <a href="#" class="choice">
             <div class="img">
-                <img src="img/logo/dog-solid.svg" alt="Choix Animaux">
+                <img src="img/logo/dog-solid.svg" alt="logo Animaux">
             </div>
-            <p>Animaux autorisés</p>
+            <span>Animaux autorisés</span>
         </a>
 
-    </section>
+    </div>
 
-    <!-- SECTION N°3 -->
-    <section class="info">
-        <p><img src="img/logo/info-solid.svg" alt="information"></p>
+    <!-- PART N°3 -->
+    <div class="info">
+        <div>
+            <img src="img/logo/info-solid.svg" alt="information">
+        </div>
         <h4>Plus de 500 logements sont disponibles dans cette ville</h4>
-    </section>
+    </div>
 
     <!-- MAIN -->
     <main class="main">
-
-        <!-- SECTION N°4 -->
+        
+        <!-- SECTION N°1 -->
         <section class="housing">
 
             <!-- TITLE -->
@@ -105,17 +107,19 @@
                 <!-- CARD N°1 -->
                 <div class="cards">
                     <a href="#">
-                        <p><img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                                alt="Auberge la Cannebière" class="imgFlex"></p>
+                        <div>
+                            <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Auberge la Cannebière" class="imgFlex">
+                        </div>
                         <div class="txt">
-                            <h6>Auberge la Cannebière</h6>
+                            <h5>Auberge la Cannebière</h5>
                             <p>Nuit à partir de <strong>25€</strong></p>
                             <div class="star">
-                                <img src="img/logo/star-solid_blue.svg" alt="blue">
-                                <img src="img/logo/star-solid_blue.svg" alt="blue">
-                                <img src="img/logo/star-solid_blue.svg" alt="blue">
-                                <img src="img/logo/star-solid_blue.svg" alt="blue">
-                                <img src="img/logo/star-solid_grey.svg" alt="grey">
+                                <img src="img/logo/star-solid_blue.svg" alt="star blue">
+                                <img src="img/logo/star-solid_blue.svg" alt="star blue">
+                                <img src="img/logo/star-solid_blue.svg" alt="star blue">
+                                <img src="img/logo/star-solid_blue.svg" alt="star blue">
+                                <img src="img/logo/star-solid_grey.svg" alt="star grey">
                             </div>
                         </div>
                     </a>
@@ -127,14 +131,14 @@
                         <p><img src="img/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photohotel5"
                                 class="imgFlex"></p>
                         <div class="txt">
-                            <h6>Hôtel du port</h6>
+                            <h5>Hôtel du port</h5>
                             <p>Nuit à partir de <strong>52€</strong></p>
                             <div class="star">
-                                <img src="img/logo/star-solid_blue.svg" alt="blue">
-                                <img src="img/logo/star-solid_blue.svg" alt="blue">
-                                <img src="img/logo/star-solid_blue.svg" alt="blue">
-                                <img src="img/logo/star-solid_blue.svg" alt="blue">
-                                <img src="img/logo/star-solid_blue.svg" alt="blue">
+                                <img src="img/logo/star-solid_blue.svg" alt="star5blue">
+                                <img src="img/logo/star-solid_blue.svg" alt="star5blue">
+                                <img src="img/logo/star-solid_blue.svg" alt="star5blue">
+                                <img src="img/logo/star-solid_blue.svg" alt="star5blue">
+                                <img src="img/logo/star-solid_blue.svg" alt="star5blue">
                             </div>
                         </div>
                     </a>
@@ -146,7 +150,7 @@
                         <p> <img src="img/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="photohotel6"
                                 class="imgFlex"></p>
                         <div class="txt">
-                            <h6>Hôtel Les mouettes</h6>
+                            <h5>Hôtel Les mouettes</h5>
                             <p>Nuit à partir de <strong>76€</strong></p>
                             <div class="star">
                                 <img src="img/logo/star-solid_blue.svg" alt="blue">
@@ -165,7 +169,7 @@
                         <p><img src="img/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="photohotel7"
                                 class="imgFlex"></p>
                         <div class="txt">
-                            <h6>Hôtel de la mer</h6>
+                            <h5>Hôtel de la mer</h5>
                             <p>Nuit à partir de <strong>46€</strong></p>
                             <div class="star">
                                 <img src="img/logo/star-solid_blue.svg" alt="blue">
@@ -184,7 +188,7 @@
                         <p><img src="img/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photohotel8"
                                 class="imgFlex"></p>
                         <div class="txt">
-                            <h6>Auberge Le Panier</h6>
+                            <h5>Auberge Le Panier</h5>
                             <p>Nuit à partir de <strong>23€</strong></p>
                             <div class="star">
                                 <img src="img/logo/star-solid_blue.svg" alt="blue">
@@ -203,7 +207,7 @@
                         <p><img src="img/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                                 alt="photohotel9" class="imgFlex"></p>
                         <div class="txt">
-                            <h6>Hôtel chez Amina</h6>
+                            <h5>Hôtel chez Amina</h5>
                             <p>Nuit à partir de <strong>96€</strong></p>
                             <div class="star">
                                 <img src="img/logo/star-solid_blue.svg" alt="blue">
@@ -308,7 +312,7 @@
 
         <div class="activityFlex">
 
-            <!-- BP -->
+            <!-- BP => BigPicture -->
             <a href="#" class="bp">
                 <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                     alt="vieux port avec bateau et ville en arrière plan">
@@ -318,14 +322,14 @@
             <!-- LEFT PART -->
             <div class="activityLeft">
 
-                <!-- MP -->
+                <!-- MP => MediumPicture-->
                 <a href="#" class="mp">
                     <img src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                         alt="fort de pomegues en pierre">
                     <p>Fort de Pomègues</p>
                 </a>
 
-                <!-- SP -->
+                <!-- SP => SmallPicture-->
                 <a href="#" class="sp">
                     <img src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                         alt="longue vue avec iles du frioul en arrière plan">
