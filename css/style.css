@@ -605,7 +605,6 @@ strong {
 .footer {
     background-color: #F2F2F2;
     padding: 30px;
-
 }
 
 .footerFlex {
@@ -644,6 +643,10 @@ strong {
     text-decoration: none;
     font-size: 0.9em;
     color: black;
+}
+
+.footer .block .child a:hover {
+    border-bottom: solid 1px;
 }
 
 /*STRUCT CSS - DRY*/
