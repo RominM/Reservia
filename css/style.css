@@ -209,7 +209,7 @@ strong {
     color: #0065FC;
 }
 
-.search_form button {
+.search_form .submitTxt {
     padding: 0;
     margin-top: 10px;
     -webkit-transition: 0.5s;
@@ -217,7 +217,7 @@ strong {
     transition: 0.5s;
 }
 
-.search_form button:hover {
+.search_form .submitTxt:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -774,11 +774,11 @@ strong {
         margin: auto;
     }
 
-    .search_form button .submit {
+    .search_form button .submitTxt {
         opacity: 0;
     }
 
-    .search_form .submit {
+    .search_form .submitTxt {
         position: relative;
         width: 50px;
         margin: -15px;
