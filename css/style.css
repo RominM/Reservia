@@ -32,7 +32,7 @@ strong {
 .link h5,
 .cards h5,
 .header .headSignup,
-.submit p,
+.submit__submitTxt,
 .filter span {
     font-family: 'Raleway-bold', sans-serif;
     font-size: 1.1em;
@@ -204,12 +204,12 @@ strong {
     outline: 0;
 }
 
-.search_form .submit:hover {
+.submit:hover {
     background-color: #dfdfdf;
     color: #0065FC;
 }
 
-.submit p {
+button .submit__submitTxt {
     padding: 0;
     margin-top: 14px;
     -webkit-transition: 0.5s;
@@ -217,7 +217,7 @@ strong {
     transition: 0.5s;
 }
 
-.search_form .submit:hover p {
+.submit:hover .submit__submitTxt {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
