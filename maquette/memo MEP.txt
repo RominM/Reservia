@@ -1,0 +1,17 @@
+body{
+	margin left
+	margin right
+}
+
+block1{
+	diplay: flex;
+}
+
+logo reservia{
+	padding
+}
+
+HAS{
+	padding
+}
+
