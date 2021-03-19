@@ -206,26 +206,29 @@ strong {
 
 .submit:hover {
     background-color: #dfdfdf;
-    color: #0065FC;
 }
 
 button .submit__submitTxt {
+    display: inline-block;
     padding: 0;
-    margin-top: 14px;
+    margin-top: 13px;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .submit:hover .submit__submitTxt {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    display: inline-block;
+    color: #0065FC;
+
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .search_form button img {
     width: 25px;
-    opacity: 0;
+    display: none;
 }
 
 /*SECTION N°2*/
@@ -398,6 +401,10 @@ button .submit__submitTxt {
 
 .cards a {
     text-decoration: none;
+}
+
+.cards_img {
+    display: inline;
 }
 
 .housing .cards .imgFlex {
@@ -774,14 +781,14 @@ button .submit__submitTxt {
         margin: auto;
     }
 
-    .search_form button p {
-        opacity: 0;
+    .search_form button .submit__submitTxt {
+        display: none;
     }
 
     .search_form .submit {
         position: relative;
         width: 50px;
-        margin: -15px;
+        margin: -40px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
@@ -792,7 +799,7 @@ button .submit__submitTxt {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 20px;
-        opacity: 1;
+        display: block;
     }
 
     /*SECTION N°2*/
