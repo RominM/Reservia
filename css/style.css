@@ -498,7 +498,8 @@ button .submit__submitTxt {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 83%;
+    width: 75%;
+    min-width: 293px;
     height: 125px;
     margin: auto;
     text-decoration: none;
@@ -515,9 +516,11 @@ button .submit__submitTxt {
 }
 
 .link {
-    width: 170%;
+    position: relative;
+    width: 150%;
     margin-top: 10px;
     margin-left: -10px;
+    margin-right: 40px;
 }
 
 .link p,
@@ -528,8 +531,9 @@ button .submit__submitTxt {
 }
 
 .link .star {
-    margin-left: 0;
-    margin-top: 30px;
+    position: absolute;
+    bottom: 15px;
+    left: -15px;
 }
 
 .activity {
@@ -871,6 +875,19 @@ button .submit__submitTxt {
     .element a {
         margin-bottom: 13px;
         max-width: 450px;
+    }
+
+    .link {
+        margin-right: 15px;
+        margin-left: -17px;
+    }
+
+    .link h5 {
+        font-size: 1em;
+    }
+
+    .link p {
+        font-size: 0.8em;
     }
 
     /*SECTION N°4*/
