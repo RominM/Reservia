@@ -32,10 +32,10 @@ strong {
 .link h5,
 .cards h5,
 .header .headSignup,
-.search_form button,
+.submit p,
 .filter span {
     font-family: 'Raleway-bold', sans-serif;
-    font: 1.1em;
+    font-size: 1.1em;
 }
 
 .headNav,
@@ -185,7 +185,7 @@ strong {
     outline: 0;
 }
 
-.search_form button {
+.search_form .submit {
     position: absolute;
     border: none;
     color: #fff;
@@ -204,20 +204,20 @@ strong {
     outline: 0;
 }
 
-.search_form button:hover {
+.search_form .submit:hover {
     background-color: #dfdfdf;
     color: #0065FC;
 }
 
-.search_form .submitTxt {
+.submit p {
     padding: 0;
-    margin-top: 10px;
+    margin-top: 14px;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
 }
 
-.search_form .submitTxt:hover {
+.search_form .submit:hover p {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
@@ -774,11 +774,11 @@ strong {
         margin: auto;
     }
 
-    .search_form button .submitTxt {
+    .search_form button p {
         opacity: 0;
     }
 
-    .search_form .submitTxt {
+    .search_form .submit {
         position: relative;
         width: 50px;
         margin: -15px;
@@ -861,7 +861,7 @@ strong {
 
     .element a {
         margin-bottom: 13px;
-        max-width: 550px;
+        max-width: 450px;
     }
 
     /*SECTION N°4*/
@@ -892,6 +892,7 @@ strong {
 
     .cards {
         width: 90%;
+        max-width: 450px;
         height: 195px;
         margin: 10px;
     }
@@ -922,6 +923,7 @@ strong {
 
     .activity .bp {
         width: 87%;
+        max-width: 450px;
         margin: auto;
         height: 175px;
         margin-bottom: 32px;
@@ -930,6 +932,7 @@ strong {
 
     .activityRight {
         width: 87%;
+        max-width: 450px;
         margin: auto;
         height: 250px;
         margin-bottom: 200px;
@@ -937,6 +940,7 @@ strong {
 
     .activityLeft {
         width: 87%;
+        max-width: 450px;
         margin: auto;
         height: 250px;
         margin-bottom: 200px;
